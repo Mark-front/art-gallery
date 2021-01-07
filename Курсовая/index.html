@@ -21,7 +21,7 @@
         <div class="header-container-in">
           <div class="nav-logo">
             <a href="" class="logo-img-link">
-              <img src="img/svg/Лого.svg" alt="">
+              <img src="img/svg/logo.svg" alt="">
             </a>
           </div>
           <nav>
@@ -76,58 +76,73 @@
         <div class="down-header-container-in">
           <ul class="select-list">
             <li class="select-item">
-              <select name="select" class="default">
+              <select name="select" class="default" data-simplebar>
                 <option selected="selecetd" disabled>Реализм</option>
-                <option value="">Густав Курбье</option>
-                <option value="">Оноре Домье</option>
-                <option value="">Франсуа Милле</option>
-                <option value="">И. Е. Репин</option>
-                <option value="">Иван Шишкин</option>
+                <option value=""><a href="">Верроккьо</a></option>
+                <option value=""><a href="">Леонардо</a></option>
+                <option value=""><a href=""> Фридрих</a></option>
+                <option value=""><a href="">Тинторетто</a></option>
+                <option value=""><a href="">Пикассо</a></option>
+                <option value=""><a href="">Малевич</a></option>
+                <option value=""><a href="">Маринетти</a></option>
+                <option value=""><a href="">Кандинский</a></option>
+                <option value=""><a href="">Пикассо</a></option>
+                <option value=""><a href="">Малевич</a></option>
+                <option value=""><a href="">Маринетти</a></option>
+                <option value=""><a href="">Кандинский</a></option>
               </select>
+              <noscript>
+                <style>
+                  /**
+                  * Reinstate scrolling for non-JS clients
+                  */
+                  .simplebar-content-wrapper {
+                    overflow: auto;
+                  }
+                </style>
+              </noscript>
             </li>
             <li class="select-item">
               <select name="select" class="multi-default">
                 <option selected="selecetd" disabled>Импрессионизм</option>
-                <option value="">Винсент Ван Гог</option>
-                <option value="">Альфред Сислей</option>
-                <option value="">Камиль Писсарро</option>
-                <option value="">Клод Моне</option>
-                <option value="">Константин Коровин</option>
+                <option value=""><a href="">Ренуар</a></option>
+                <option value=""><a href="">Мане</a></option>
+                <option value=""><a href="">Сислей</a></option>
+                <option value=""><a href="">Моне</a></option>
               </select>
             </li>
             <li class="select-item">
               <select name="select" class="multi-default">
                 <option selected="selecetd" disabled>Постимпрессионизм</option>
-                <option value="">Анри Тулуз-Лотрек</option>
-                <option value="">Поль Сезанн</option>
-                <option value="">Анри Руссо</option>
-                <option value="">Поль Гоген </option>
+                <option value=""><a href="">Сёра</a></option>
+                <option value=""><a href="">Гоген</a></option>
+                <option value=""><a href="">Сезанн</a></option>
+                <option value=""><a href="">Ван Гог</a></option>
               </select>
             </li>
             <li class="select-item">
               <select name="select" class="multi-default">
                 <option selected="selecetd" disabled>Авангард</option>
-                <option value="">Казимир Малевич</option>
-                <option value="">Сальвадор Дали</option>
-                <option value="">Ричард Принс</option>
-                <option value="">Чжан Сяоган</option>
+                <option value=""><a href="">Пикассо</a></option>
+                <option value=""><a href="">Малевич</a></option>
+                <option value=""><a href="">Маринетти</a></option>
+                <option value=""><a href="">Кандинский</a></option>
               </select>
             </li>
             <li class="select-item select-item-last">
               <select name="select" class="multi-default">
                 <option selected="selecetd" disabled>Футуризм</option>
-                <option value="">Джакомо Балла</option>
-                <option value="">Джозеф Стелла</option>
-                <option value="">Карло Карра</option>
+                <option value=""><a href="">Балла</a></option>
+                <option value=""><a href="">Северини</a></option>
+                <option value=""><a href="">Прателла</a></option>
+                <option value=""><a href="">Карра</a></option>
               </select>
             </li>
-          <script src="select/choices.min.js"></script>
-          <script src="select/choices.js"></script>
           </ul>
           <div class="search">
             <form class="form-search" action="">
               <button class="btn-search"></button>
-              <input name="search" class="search-input" placeholder="Поиск по сайту" type="search">
+              <input name="search" class="search-input" autocomplete="off" placeholder="Поиск по сайту" type="search">
             </form>
           </div>
         </div>
@@ -185,19 +200,23 @@
           <h3 class="filter-by-header">
             Фильтровать по:
           </h3>
-              <select name="select" class="filter-select">
-                <option selected="selecetd">Автор</option>
-                <option value="">Направление</option>
-                <option value="">Техника</option>
-              </select>
+              <div class="filter-select">
+                <select name="select" class="filter-select">
+                  <option selected="selecetd">Автор</option>
+                  <option value="">Направление</option>
+                  <option value="">Техника</option>
+                </select>
+              </div>
               <script src="select/choices.min.js"></script>
               <script src="select/choices.js"></script>
           <div class="free-down-text-box">
             <p class="free-down-text">
               Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-              <a class="free-down-text-link" href="">
-                авторизуйтесь
-              </a>
+              <span>
+                <a class="free-down-text-link" href="">
+                  авторизуйтесь
+                </a>
+              </span>
               , либо воспользуйтесь лицензией. 
             </p>
           </div>

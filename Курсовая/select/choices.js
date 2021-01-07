@@ -24,15 +24,15 @@ const multiDefault = () => {
 
 multiDefault();
 
-const filterSelect = () => {
-	const filter = document.querySelector('.filter-select');
-  const choices = new Choices(filter, {
-		searchEnabled: false,
-		noResultsText: 'Ничего не найдено'
+const filterDefault = () => {
+	const elements = document.querySelectorAll('.filter-select');
+	elements.forEach(el => {
+		const choices = new Choices(el, {
+			searchEnabled: false,
+			noResultsText: 'Ничего не найдено'
+		});
 	});
+	
+}
 
-	let ariaLabel = filter.getAttribute('aria-label');
-	filter.closest('.choices').setAttribute('aria-label', ariaLabel);
-};
-
-filterSelect();
+filterDefault();
