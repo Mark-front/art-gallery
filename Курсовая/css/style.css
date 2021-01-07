@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -80,6 +81,8 @@ p {
 .header-container {
   position: absolute;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1920px;
   height: 100px;
@@ -97,6 +100,8 @@ p {
 }
 
 .nuv-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 279px;
   width: 896px;
@@ -122,16 +127,22 @@ p {
 .nuv-link:hover,
 .entry-link:hover {
   color: var(--text-hover);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 .nuv-link:active,
 .entry-link:active {
   color: var(--text-active);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 .header-container-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;  
 }
 
@@ -148,6 +159,8 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: var(--text-not-on-white-background);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -159,6 +172,8 @@ p {
 
 .entry-link:hover::before {
   content: url(../img/svg/enterer-icon-hover.svg);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -173,6 +188,8 @@ p {
 .down-header-container {
   position: absolute;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1920px;
   height: 70px;
@@ -181,10 +198,14 @@ p {
 }
 
 .down-header-container-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .select-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 23px;
   margin-right: 315px;
@@ -488,8 +509,11 @@ input::-webkit-input-placeholder {
 }
 
 .image-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-slider-gallery {
@@ -533,6 +557,4 @@ input::-webkit-input-placeholder {
   bottom: 874px !important;
   left: -507px !important;
 }
-
-
 
