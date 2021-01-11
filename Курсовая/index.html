@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 <body>
   <header>
@@ -76,67 +78,94 @@
         <div class="down-header-container-in">
           <ul class="select-list">
             <li class="select-item">
-              <select name="select" class="default" data-simplebar>
-                <option selected="selecetd" disabled>Реализм</option>
-                <option value=""><a href="">Верроккьо</a></option>
-                <option value=""><a href="">Леонардо</a></option>
-                <option value=""><a href=""> Фридрих</a></option>
-                <option value=""><a href="">Тинторетто</a></option>
-                <option value=""><a href="">Пикассо</a></option>
-                <option value=""><a href="">Малевич</a></option>
-                <option value=""><a href="">Маринетти</a></option>
-                <option value=""><a href="">Кандинский</a></option>
-                <option value=""><a href="">Пикассо</a></option>
-                <option value=""><a href="">Малевич</a></option>
-                <option value=""><a href="">Маринетти</a></option>
-                <option value=""><a href="">Кандинский</a></option>
-              </select>
-              <noscript>
-                <style>
-                  /**
-                  * Reinstate scrolling for non-JS clients
-                  */
-                  .simplebar-content-wrapper {
-                    overflow: auto;
-                  }
-                </style>
-              </noscript>
+              <input type="checkbox" id="hml-1" class="hidden-menu-ticker">
+              <label class="art-menu-btn" for="hml-1">Реализм</label>
+              <ul class="hidden-menu-list" data-simplebar>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Верроккьо</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Леонардо</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href=""> Фридрих</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Тинторетто</a>
+                </li>
+              </ul>
             </li>
             <li class="select-item">
-              <select name="select" class="multi-default">
-                <option selected="selecetd" disabled>Импрессионизм</option>
-                <option value=""><a href="">Ренуар</a></option>
-                <option value=""><a href="">Мане</a></option>
-                <option value=""><a href="">Сислей</a></option>
-                <option value=""><a href="">Моне</a></option>
-              </select>
+              <input type="checkbox" id="hml-2" class="hidden-menu-ticker">
+              <label class="art-menu-btn" for="hml-2">Импрессионизм</label>
+              <ul class="hidden-menu-list" data-simplebar>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Ренуар</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Мане</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Сислей</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Моне</a>
+                </li>
+              </ul>
             </li>
             <li class="select-item">
-              <select name="select" class="multi-default">
-                <option selected="selecetd" disabled>Постимпрессионизм</option>
-                <option value=""><a href="">Сёра</a></option>
-                <option value=""><a href="">Гоген</a></option>
-                <option value=""><a href="">Сезанн</a></option>
-                <option value=""><a href="">Ван Гог</a></option>
-              </select>
+              <input type="checkbox" id="hml-3" class="hidden-menu-ticker">
+              <label class="art-menu-btn" for="hml-3">Постимпрессионизм</label>
+                <ul class="hidden-menu-list" data-simplebar>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Сёра</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Гоген</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Сезанн</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Ван Гог</a>
+                </li>
+                </ul>
             </li>
             <li class="select-item">
-              <select name="select" class="multi-default">
-                <option selected="selecetd" disabled>Авангард</option>
-                <option value=""><a href="">Пикассо</a></option>
-                <option value=""><a href="">Малевич</a></option>
-                <option value=""><a href="">Маринетти</a></option>
-                <option value=""><a href="">Кандинский</a></option>
-              </select>
+              <input type="checkbox" id="hml-4" class="hidden-menu-ticker">
+              <label class="art-menu-btn" for="hml-4">Авангард</label>
+                <ul class="hidden-menu-list" data-simplebar>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Пикассо</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Малевич</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Маринетти</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Кандинский</a>
+                </li>
+                </ul>
             </li>
             <li class="select-item select-item-last">
-              <select name="select" class="multi-default">
-                <option selected="selecetd" disabled>Футуризм</option>
-                <option value=""><a href="">Балла</a></option>
-                <option value=""><a href="">Северини</a></option>
-                <option value=""><a href="">Прателла</a></option>
-                <option value=""><a href="">Карра</a></option>
-              </select>
+              <input type="checkbox" id="hml-5" class="hidden-menu-ticker">
+              <label class="art-menu-btn" for="hml-5">Футуризм</label>
+                <ul class="hidden-menu-list" data-simplebar>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Балла</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Северини</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Прателла</a>
+                </li>
+                <li class="hidden-menu-item">
+                  <a class="hidden-menu-item-link" href="">Карра</a>
+                </li>
+                </ul>
             </li>
           </ul>
           <div class="search">
@@ -158,7 +187,7 @@
           <p class="hero-block-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
           </div>
           <div class="hero-block-btn-box">
-            <button class="hero-block-btn">Подписаться на рассылку</button>
+            <a class="hero-block-btn">Подписаться на рассылку</a>
           </div>
         </div>
       </div>
@@ -200,9 +229,9 @@
           <h3 class="filter-by-header">
             Фильтровать по:
           </h3>
-              <div class="filter-select">
+              <div class="select-gallary">
                 <select name="select" class="filter-select">
-                  <option selected="selecetd">Автор</option>
+                  <option value="">Автор</option>
                   <option value="">Направление</option>
                   <option value="">Техника</option>
                 </select>
@@ -344,6 +373,23 @@
               <script src="swiper/swiper.js"></script>
           </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-catalog">
+      <div class="container">
+        <h2>Каталог</h2>
+        <form class="flags-countries-box">
+          <input class="flags-countries-radio" name="country" type="radio">
+          <input class="flags-countries-radio" name="country" type="radio">
+          <input class="flags-countries-radio" name="country" type="radio">
+          <input class="flags-countries-radio" name="country" type="radio">
+          <input class="flags-countries-radio" name="country" type="radio">
+        </form>
+        <div class="section-catalog-text-box">
+          <p class="section-catalog-text">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
+          </p>
         </div>
       </div>
     </section>
