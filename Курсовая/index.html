@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Accordion - Default functionality</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -30,6 +28,7 @@
   </script>
 </head>
 <body>
+  <div class="CENTER">
   <header>
     <section class="header-container">
       <div class="container">
@@ -185,7 +184,7 @@
             
           </script>
           <div class="search">
-            <form class="form-search" action="">
+            <form class="form-search" action="https://jsonplaceholder.typicode.com/todos/1">
               <button class="btn-search"></button>
               <input name="search" class="search-input" autocomplete="off" placeholder="Поиск по сайту" type="search">
             </form>
@@ -395,7 +394,7 @@
     <section class="section-catalog">
       <div class="container">
         <h2 class="section-catalog-header">Каталог</h2>
-        <form class="flags-countries-box">
+        <form class="flags-countries-box" action="https://jsonplaceholder.typicode.com/todos/1">
           <input id="franc" class="flags-countries-radio" name="country" type="radio">
           <label class="country-radiobtn img-1" for="franc"></label>
           <span class="country-radiobtn-border" id="franc-border"></span>
@@ -1088,7 +1087,7 @@
           <h3 class="categories-header">
             Категории
           </h3>
-          <form action="" class="categories-form">
+          <form action="https://jsonplaceholder.typicode.com/todos/1" class="categories-form">
             <input id="bestsellers" type="radio" name="category">
             <label class="label-categories bestsellers" for="bestsellers">Бестселлеры</label>
             <input id="art" type="radio" name="category">
@@ -1119,7 +1118,7 @@
           <h3 class="prise-header">
             Цена
           </h3>
-          <form action="" class="prise-form">
+          <form action="https://jsonplaceholder.typicode.com/todos/1" class="prise-form">
             <span class="prise-form-text--from" >От</span>
             <input type="text" name="min-prise" class="enter-prise">
             <span class="prise-form-text--before" >до</span>
@@ -1332,50 +1331,55 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
               <ul class="partners-list">
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 65.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 66.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 67.svg" alt="">
-                </li>
+                <li class="partners-item-1"></li>
+                <li class="partners-item-2"></li>
+                <li class="partners-item-3"></li>
               </ul>
             </div>
             <div class="swiper-slide">
               <ul class="partners-list">
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 22.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 25.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 23.svg" alt="">
-                </li>
+                <li class="partners-item-4"></li>
+                <li class="partners-item-5"></li>
+                <li class="partners-item-6"></li>
               </ul>
             </div>
             <div class="swiper-slide">
               <ul class="partners-list">
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 26.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 24.svg" alt="">
-                </li>
-                <li class="partners-item">
-                  <img class="partners-slider-gallery" src="img/svg/Group 27.svg" alt="">
-                </li>
+                <li class="partners-item-7"></li>
+                <li class="partners-item-8"></li>
+                <li class="partners-item-9"></li>
               </ul>
             </div>
         </div>
     
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next "></div>
+        <div class="swiper-button-partners-prev"></div>
+        <div class="swiper-button-partners-next"></div>
     
-        <script src="swiper/swiper.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container-partners', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-partners-prev',
+    prevEl: '.swiper-button-partners-next',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+        </script>
       </div>
       </div>
     </section>
@@ -1389,10 +1393,10 @@
           </p>
           <div class="order-a-call">
             <h3 class="order-a-call-header">Заказать обратный звонок</h3>
-            <form id="call" class="order-a-call-form" action="">
+            <form action="https://jsonplaceholder.typicode.com/posts" id="call" class="order-a-call-form" method="POST" >
               <input class="name" type="text" name="name" placeholder="Имя*">
               <input class="tel" type="tel" name="tel" placeholder="Телефон*">
-              <button class="btn-call" for="call">Заказать</button>
+              <button class="btn-call" type="submit">Заказать</button>
             </form>
           </div>
           <div class="social-box">
@@ -1436,8 +1440,8 @@
                   
                 var myPlacemark = new ymaps.Placemark([55.758463,37.601079], {}, {
                     iconLayout: 'default#image',
-                    iconImageHref: 'img/Subtract.svg',
-                    iconImageSize: [30, 42],
+                    iconImageHref: 'img/svg/MapIcon.svg',
+                    iconImageSize: [20, 20],
                     iconImageOffset: [-3, -42]
                 });
     
@@ -1474,5 +1478,6 @@
       </li>
     </ul>
   </footer>
+</div>
 </body>
 </html>
