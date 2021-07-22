@@ -11,16 +11,3 @@ const filterDefault = () => {
 
 filterDefault();
 
-const multiDefault = () => {
-	const elements = document.querySelectorAll('.multi-default');
-	elements.forEach(el => {
-		const choices = new Choices(el, {
-			searchEnabled: false,
-			noResultsText: 'Ничего не найдено'
-		});
-	});
-	
-}
-
-multiDefault();
-

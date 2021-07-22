@@ -21,75 +21,69 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  </script>
+
 </head>
 <body>
   <div class="center">
   <header class="header">
     <div class="top-header">
-      <div class="container">
+      <div class="container top-header-content">
         <a href="" class="logo">
           <img src="img/svg/logo.svg" alt="логотип сайта">
         </a>
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 О нас
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 Галерея
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 Каталог
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 События
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 Издания
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 Проекты
               </a>
             </li>
             <li class="nav-item">
-              <a href="nav-link">
+              <a href="" class="nav-link">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
-        <a href="" class="entry">
+       <div class="log-in-box">
+        <a href="" class="log-in">
           Войти
         </a>
+       </div>
       </div>
     </div> 
     <div class="bottom-header">
-      <div class="conteiner">
-        <ul class="art-directions-list">
-          <li class="art-directions-item">Реализм</li>
-          <li class="art-directions-item">Импрессионизм</li>
-          <li class="art-directions-item">Постимпрессионизм</li>
-          <li class="art-directions-item">Авангард</li>
-          <li class="art-directions-item">Футуризм</li>
-        </ul>
+      <div class="container bottom-header-content">
         <ul class="artists-directions-list">
           <li class="artists-directions-item">
+            <div class="art-btn-box">
+              <button class="art-directions-item-btn">Реализм</button>
+            </div>
             <ul class="hiding-list">
               <li class="hiding-item">
                 <a class="hiding-link" href="">Верроккьо</a>
@@ -106,6 +100,9 @@
             </ul>
           </li>
           <li class="artists-directions-item">
+            <div class="art-btn-box">
+              <button class="art-directions-item-btn">Импрессионизм</button>
+            </div>
             <ul class="hiding-list">
               <li class="hiding-item">
                 <a class="hiding-link" href="">Ренуар</a>
@@ -122,6 +119,9 @@
             </ul>
           </li>
           <li class="artists-directions-item">
+            <div class="art-btn-box">
+              <button class="art-directions-item-btn">Постимпрессионизм</button>
+            </div>
             <ul class="hiding-list">
               <li class="hiding-item">
                 <a class="hiding-link" href="">Сёра</a>
@@ -138,6 +138,9 @@
             </ul>
           </li>
           <li class="artists-directions-item">
+            <span class="art-btn-box">
+              <button class="art-directions-item-btn">Авангард</button>
+            </span>
             <ul class="hiding-list">
               <li class="hiding-item">
                 <a class="hiding-link" href="">Пикассо</a>
@@ -154,6 +157,9 @@
             </ul>
           </li>
           <li class="artists-directions-item">
+            <div class="art-btn-box">
+              <button class="art-directions-item-btn">Футуризм</button>
+            </div>
             <ul class="hiding-list">
               <li class="hiding-item">
                 <a class="hiding-link" href="">Балла</a>
@@ -170,9 +176,9 @@
             </ul>
           </li>
         </ul>
-        <form action="https://jsonplaceholder.typicode.com/posts" id="search" class="search-form" method="POST" >
+        <form class="search-form" action="https://jsonplaceholder.typicode.com/posts" id="search" method="POST" >
           <button class="search-btn" type="submit"></button>
-          <input type="search" name="search" placeholder="Поиск по сайту" >
+          <input class="search-input" type="search" name="search" placeholder="Поиск по сайту" >
         </form>
       </div>
     </div>
@@ -1465,15 +1471,12 @@
     </ul>
   </footer>
 </div>
+<script src="select/header-select.js"></script>
+<script src="js/focus.js"></script>
 <script>
-  $(function() {
-$('.item').on('click', function(e) {
-var $this = $(this).next('.sub');
-
-$('.sub').not($this).removeClass('opened');
-$this.toggleClass('opened');
-});
-});
-</script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
 </body>
 </html>
