@@ -6,8 +6,7 @@
   <title>Blanchard</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" type="text/css" href="simptip.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normolize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="select/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -24,15 +23,14 @@
 
 </head>
 <body>
-  <div class="center">
   <header class="header">
     <div class="top-header">
       <div class="container top-header-content">
         <a href="" class="logo">
           <img src="img/svg/logo.svg" alt="логотип сайта">
         </a>
-        <nav>
-          <ul class="nav-list">
+        <nav class="nav">
+          <ul class="list nav-list">
             <li class="nav-item">
               <a href="" class="nav-link">
                 О нас
@@ -70,21 +68,17 @@
             </li>
           </ul>
         </nav>
-       <div class="log-in-box">
-        <a href="" class="log-in">
+        <a href="" class="top-header-log-in">
           Войти
         </a>
-       </div>
       </div>
     </div> 
     <div class="bottom-header">
       <div class="container bottom-header-content">
-        <ul class="artists-directions-list">
+        <ul class="list artists-directions-list">
           <li class="artists-directions-item">
-            <div class="art-btn-box">
-              <button class="art-directions-item-btn">Реализм</button>
-            </div>
-            <ul class="hiding-list">
+            <button class="art-directions-item-btn">Реализм</button>
+            <ul class="list hiding-list" data-simplebar>
               <li class="hiding-item">
                 <a class="hiding-link" href="">Верроккьо</a>
               </li>
@@ -100,10 +94,8 @@
             </ul>
           </li>
           <li class="artists-directions-item">
-            <div class="art-btn-box">
-              <button class="art-directions-item-btn">Импрессионизм</button>
-            </div>
-            <ul class="hiding-list">
+            <button class="art-directions-item-btn">Импрессионизм</button>
+            <ul class="list hiding-list" data-simplebar>
               <li class="hiding-item">
                 <a class="hiding-link" href="">Ренуар</a>
               </li>
@@ -119,10 +111,8 @@
             </ul>
           </li>
           <li class="artists-directions-item">
-            <div class="art-btn-box">
-              <button class="art-directions-item-btn">Постимпрессионизм</button>
-            </div>
-            <ul class="hiding-list">
+            <button class="art-directions-item-btn">Постимпрессионизм</button>
+            <ul class="list hiding-list" data-simplebar>
               <li class="hiding-item">
                 <a class="hiding-link" href="">Сёра</a>
               </li>
@@ -138,10 +128,8 @@
             </ul>
           </li>
           <li class="artists-directions-item">
-            <span class="art-btn-box">
-              <button class="art-directions-item-btn">Авангард</button>
-            </span>
-            <ul class="hiding-list">
+            <button class="art-directions-item-btn">Авангард</button>
+            <ul class="list hiding-list" data-simplebar>
               <li class="hiding-item">
                 <a class="hiding-link" href="">Пикассо</a>
               </li>
@@ -157,10 +145,8 @@
             </ul>
           </li>
           <li class="artists-directions-item">
-            <div class="art-btn-box">
-              <button class="art-directions-item-btn">Футуризм</button>
-            </div>
-            <ul class="hiding-list">
+            <button class="art-directions-item-btn">Футуризм</button>
+            <ul class="list hiding-list" data-simplebar>
               <li class="hiding-item">
                 <a class="hiding-link" href="">Балла</a>
               </li>
@@ -213,7 +199,6 @@
             </div>
         </div>
       </div>
-      <script src="swiper/swiper.js"></script>
     </section>
     <section class="about-us-block">
       <div class="container">
@@ -260,7 +245,7 @@
             <div class="swiper-container swiper-container-image">
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <ul class="image-list">
+                    <ul class="list image-list">
                       <li class="image-item">
                         <img class="image-slider-gallery" src="img/png/girl-and-grapes.png" alt="">
                       </li>
@@ -282,7 +267,7 @@
                     </ul>
                   </div>
                   <div class="swiper-slide">
-                    <ul class="image-list">
+                    <ul class="list image-list">
                       <li class="image-item">
                         <img class="image-slider-gallery" src="img/png/Rectangle-87.png" alt="">
                       </li>
@@ -304,7 +289,7 @@
                     </ul>
                   </div>
                   <div class="swiper-slide">
-                    <ul class="image-list">
+                    <ul class="list image-list">
                       <li class="image-item">
                         <img class="image-slider-gallery" src="img/png/Rectangle-70.png" alt="">
                       </li>
@@ -326,7 +311,7 @@
                     </ul>
                   </div>
                   <div class="swiper-slide">
-                    <ul class="image-list">
+                    <ul class="list image-list">
                       <li class="image-item">
                         <img class="image-slider-gallery" src="img/png/Rectangle-1.png" alt="">
                       </li>
@@ -348,7 +333,7 @@
                     </ul>
                   </div>
                   <div class="swiper-slide">
-                    <ul class="image-list">
+                    <ul class="list image-list">
                       <li class="image-item">
                         <img class="image-slider-gallery" src="img/png/Rectangle-77.png" alt="">
                       </li>
@@ -425,7 +410,7 @@
         <div class="section-catalog-accordion" id="accordion">
           <h3>C 1400 по 1499 гг.</h3>
           <div class="artist-names-accordion-box" style="height: 341px;">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -454,7 +439,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -483,7 +468,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -506,7 +491,7 @@
           </div>
           <h3>C 1500 по 1599 гг.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -535,7 +520,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -564,7 +549,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -587,7 +572,7 @@
           </div>
           <h3>C 1600 по 1699 гг.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -616,7 +601,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -645,7 +630,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -668,7 +653,7 @@
           </div>
           <h3>C 1700 по 1799 гг.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -697,7 +682,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -726,7 +711,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -749,7 +734,7 @@
           </div>
           <h3>C 1800 по 1899 гг.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -778,7 +763,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -807,7 +792,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -830,7 +815,7 @@
           </div>
           <h3>C 1900 по 1999 гг.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -859,7 +844,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -888,7 +873,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -911,7 +896,7 @@
           </div>
           <h3>C 2000 г.</h3>
           <div class="artist-names-accordion-box">
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Бенедетто ди Биндо</a>
               </li>
@@ -940,7 +925,7 @@
                 <a class="artist-names-link" href="">Бьяджо д’Антонио Туччи</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Веккьетта</a>
               </li>
@@ -969,7 +954,7 @@
                 <a class="artist-names-link" href="">Джорджоне</a>
               </li>
             </ul>
-            <ul class="artist-names-accordion-list">
+            <ul class="list artist-names-accordion-list">
               <li class="artist-names-accordion-item">
                 <a class="artist-names-link" href="">Парентино, Бернардо</a>
               </li>
@@ -998,7 +983,7 @@
         <h2>События</h2>
         <input id="events-btn" type="checkbox" class="section-events-checkbox">
         <label for="events-btn" class="section-events-checkbox-btn">Все события</label>
-        <ul class="section-events-list">
+        <ul class="list section-events-list">
           <li class="section-events-item" >
             <p class="mini-text">
               Музей им. Щусева <br> с 20 марта по 30 апреля
@@ -1121,7 +1106,7 @@
         <div class="swiper-container swiper-container-books">
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <ul class="books-list">
+                <ul class="list books-list">
                   <li class="books-item">
                     <img class="image-slider-book" src="img/png/Rectangle-111.png" alt="">
                     <p class="prise-book">
@@ -1176,7 +1161,7 @@
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="books-list">
+                <ul class="list books-list">
                   <li class="books-item">
                     <img class="image-slider-book" src="img/png/Rectangle-114.png" alt="">
                     <p class="prise-book">
@@ -1231,7 +1216,7 @@
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="books-list">
+                <ul class="list books-list">
                   <li class="books-item">
                     <img class="image-slider-book" src="img/png/Rectangle-117.png" alt="">
                     <p class="prise-book">
@@ -1322,21 +1307,21 @@
       <div class="swiper-container swiper-container-partners">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <ul class="partners-list">
+              <ul class="list partners-list">
                 <li class="partners-item-1"></li>
                 <li class="partners-item-2"></li>
                 <li class="partners-item-3"></li>
               </ul>
             </div>
             <div class="swiper-slide">
-              <ul class="partners-list">
+              <ul class="list partners-list">
                 <li class="partners-item-4"></li>
                 <li class="partners-item-5"></li>
                 <li class="partners-item-6"></li>
               </ul>
             </div>
             <div class="swiper-slide">
-              <ul class="partners-list">
+              <ul class="list partners-list">
                 <li class="partners-item-7"></li>
                 <li class="partners-item-8"></li>
                 <li class="partners-item-9"></li>
@@ -1452,7 +1437,7 @@
         <img src="img/svg/logo.svg" alt="">
       </a>
     </div>
-    <ul class="footer-social-list">
+    <ul class="list footer-social-list">
       <li class="footer-social-item">
         <a href="" class="footer-social-item-link">
           <img src="img/svg/vk.svg" alt="">
@@ -1470,8 +1455,9 @@
       </li>
     </ul>
   </footer>
-</div>
-<script src="select/header-select.js"></script>
+
+<script src="js/select/header-select.js"></script>
+<script src="js/swiper/swiper.js"></script>
 <script src="js/focus.js"></script>
 <script>
   $( function() {
