@@ -5,100 +5,90 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-Italic.eot');
   src: local('Open Sans Italic'), local('OpenSans-Italic'),
-      url('OpenSans-Italic.woff2') format('woff2'),
-      url('OpenSans-Italic.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-Regular.eot');
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-      url('OpenSans-Regular.woff2') format('woff2'),
-      url('OpenSans-Regular.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-BoldItalic.eot');
   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
-      url('OpenSans-BoldItalic.woff2') format('woff2'),
-      url('OpenSans-BoldItalic.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-BoldItalic.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-SemiBold.eot');
   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-      url('OpenSans-SemiBold.woff2') format('woff2'),
-      url('OpenSans-SemiBold.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-ExtraBoldItalic.eot');
   src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'),
-      url('OpenSans-ExtraBoldItalic.woff2') format('woff2'),
-      url('OpenSans-ExtraBoldItalic.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-ExtraBoldItalic.woff') format('woff');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-LightItalic.eot');
   src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'),
-      url('OpenSans-LightItalic.woff2') format('woff2'),
-      url('OpenSans-LightItalic.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-LightItalic.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-Bold.eot');
   src: local('Open Sans Bold'), local('OpenSans-Bold'),
-      url('OpenSans-Bold.woff2') format('woff2'),
-      url('OpenSans-Bold.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-SemiBoldItalic.eot');
   src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'),
-      url('OpenSans-SemiBoldItalic.woff2') format('woff2'),
-      url('OpenSans-SemiBoldItalic.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-SemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-ExtraBold.eot');
   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
-      url('OpenSans-ExtraBold.woff2') format('woff2'),
-      url('OpenSans-ExtraBold.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-ExtraBold.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-Light.eot');
   src: local('Open Sans Light'), local('OpenSans-Light'),
-      url('OpenSans-Light.woff2') format('woff2'),
-      url('OpenSans-Light.woff') format('woff');
+      url('../fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+      url('../fonts/OpenSans/OpenSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -182,8 +172,8 @@ p {
 .publications-header,
 .categories-header,
 .section-gallery-header,
-.nav-link,
-.top-header-log-in {
+.nav__link,
+.top-header__log-in {
   color: var(--text-not-on-white-background);
 }
 
@@ -201,36 +191,39 @@ p {
 }
 
 /*top-header */
-.top-header {
-  height: 100px;
+.header__top-header {
   background-color: var(--background-navigation);
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
-.top-header-content {
-  display: flex;
-  padding-top: 28px;
+.top-header__content {
+  display: flex;    
   align-items: center;
+}
+
+.top-header__logo {
+  margin: 0 174px 0 0;
 }
 
 .logo {
   display: block;
-  margin: 0 174px 0 0;
 }
 
 .nav {
-  margin: 0 179px 0 0;
+  margin: 0 274px 0 0;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
 }
 
-.nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin: 0 50px 0 0;
 }
 
 
-.nav-link {
+.nav__link {
   display: block;
   width: auto;
   padding: 2px 6px 0 6px;
@@ -238,30 +231,29 @@ p {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 0.45px;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: var(--text-hover);
 }
 
-.nav-link:active {
+.nav__link:active {
   color: var(--text-active);
 }
 
-.nav-link:focus {
+.nav__link:focus {
   background-color: var(--focus-color);
   outline: none;
 }
 
-.top-header-log-in {
+.top-header__log-in {
   display: flex;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.2px;
 }
 
-.top-header-log-in::before {
+.top-header__log-in::before {
   display: block;
   width: 18px;
   content: url(../img/svg/log-in-icon.svg);
@@ -293,84 +285,77 @@ p {
   }
 }
 
-.top-header-log-in:hover {
+.top-header__log-in:hover {
   color: var(--text-hover);
 }
 
-.top-header-log-in:hover:before { 
+.top-header__log-in:hover:before { 
   animation: log-in-icon-hover .3s forwards;
 }
 
-.top-header-log-in:active{
+.top-header__log-in:active{
   color: var(--text-active);
 }
 
-.top-header-log-in:active:before { 
+.top-header__log-in:active:before { 
   content: url(../img/svg/log-in-icon-active.svg);
 }
 
-.top-header-log-in:focus {
+.top-header__log-in:focus {
   outline: none;
 }
 
-.top-header-log-in:focus-within{
+.top-header__log-in:focus-within{
   background-color: var(--focus-color);
 }
 
 /*bottom-header */
-.bottom-header {
-  height: 70px;
+.header__bottom-header {
   background: var(--transparent-black);
+  padding: 23px 0 21px 0;
 }
 
-.bottom-header-content {
+.bottom-header__content {
   display: flex;
-  padding: 23px 0 0 0;
   align-items: center;
 }
 
-.artists-directions-list {
+.bottom-header__list {
   display: flex;
   margin: 0 316px 0 0 ;
 }
 
-.artists-directions-item {
+.bottom-header__item {
   position: relative;
 }
 
 
-.artists-directions-item:not(:last-child) {
-  margin: 0 95px 0 0;
+.bottom-header__item:not(:last-child) {
+  margin: 0 97px 0 0;
 }
 
-.art-directions-item-btn {
+.bottom-header__btn {
   padding: 0;
   background: none;
   border: none;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 00.4px;
   color: var(--text-not-on-white-background);
 }
 
-
-.art-directions-item-btn:hover {
+.bottom-header__btn:hover {
   color: var(--text-hover);
 }
 
-
-
-.art-directions-item-btn:focus-within  {
+.bottom-header__btn:focus-within  {
   background: var(--focus-color);
   outline: 0px;
   border: none;
 }
 
-.art-directions-item-btn::after {
+.bottom-header__btn::after {
   content: url(../img/svg/SelectIcon.svg);
   margin-left: 3px;
-  width: 10px;
-  height: 5px;
 }
 
 @keyframes array-hover {
@@ -399,24 +384,24 @@ p {
   }
 }
 
-.art-directions-item-btn:hover:after {
+.bottom-header__btn:hover:after {
   animation: array-hover .3s forwards;
 }
 
-.art-directions-item-btn:active {
+.bottom-header__btn:active {
   color: var(--text-active) !important;
 }
 
-.art-directions-item-btn:active:after {
+.bottom-header__btn:active:after {
   content: url(../img/svg/select-icon-active.svg) !important;
 }
 
-.hiding-list {
+.select-list {
   display: none;
   visibility: hidden;
 }
 
-.visible-list {
+.select-list--visible-list {
   position: absolute !important;
   display: block !important;
   visibility: visible !important;
@@ -441,14 +426,14 @@ p {
   background-color: var(--background-navigation);
 }
 
-.hiding-item {
+.select-list__item {
   width: 220px;
   height: 40px;
   margin: 0 0 20px 0;
   background: #D88F99;
 }
 
-.hiding-link {
+.select-list__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -460,46 +445,47 @@ p {
   line-height: 19px;
 }
 
-.hiding-link:hover {
+.select-list__link:hover {
   outline: 2px solid #9D5CD0;
 }
 
-.hiding-link:focus {
+.select-list__link:focus {
   outline: 2px solid #9D5CD0;
 }
 
-.hiding-link:active {
+.select-list__link:active {
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);
   outline: 2px solid #D1A9F0;
 }
 
-.hiding-item:nth-child(4n+1) {
+.select-list__item:nth-child(4n+1) {
   background-image: url(../img/png/Rectangle\ 57.png);
 }
 
-.hiding-item:nth-child(4n+2) {
+.select-list__item:nth-child(4n+2) {
   background-image: url(../img/png/Rectangle\ 58.png);
 }
 
-.hiding-item:nth-child(4n+3) {
+.select-list__item:nth-child(4n+3) {
   background-image: url(../img/png/Rectangle\ 59.png);
 }
 
-.hiding-item:nth-child(4n+4) {
+.select-list__item:nth-child(4n+4) {
   background-image: url(../img/png/Rectangle\ 60.png);
 }
 
 /* search */
+.bottom-header__search {
+  padding-top: 3px;
+}
 
-.search-form {
+.search {
   display: flex;
   width: 251px;
-  padding-top: 3px;
-  height: 26px;
   align-items: center;
 }
 
-.search-btn {
+.search__btn {
   width: 22px;
   height: 22px;
   margin-right: 10px;
@@ -507,7 +493,7 @@ p {
   border: none;
 }
 
-.search-input {
+.search__input {
   width: 218px;
   padding: 0 0 3px 0;
   background: none;
@@ -515,18 +501,18 @@ p {
   border-bottom: 1px solid var(--border-search);
 }
 
-.search-input:hover {
+.search__input:hover {
   border-bottom: 1px solid var(--text-hover);
 }
 
-.search-input:focus {
+.search__input:focus {
   outline: none;
   border: none;
   color: var(--text-not-on-white-background);
   border-bottom: 1px solid var(--focus-color);
 }
 
-.search-input::placeholder {
+.search__input::placeholder {
   color: var(--text-not-on-white-background);
   font-size: 18px;
   line-height: 25px;
