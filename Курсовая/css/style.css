@@ -543,7 +543,7 @@ body {
 .gallery {
   width: 100%;
   margin: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 69px;
   background: url(../img/png/fon-section-galary.png) no-repeat;
 }
 
@@ -683,24 +683,31 @@ body {
 }
 
 .gallery__image {
+  height: 100%;
   width: 350px;
 }
 
 .gallery__item {
   position: relative;
+  height: 350px;
   margin-right: 50px;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
 }
 
-.gallery__item::after{
-  content: '';
+.gallery__item:nth-child(4n) {
+  margin-bottom: 0px;
+}
+.gallery__item:nth-child(5n) {
+  margin-bottom: 0px;
+}
+.gallery__item:nth-child(6n) {
+  margin-bottom: 0px;
+}
+
+.gallery__item--hover{
   display: block;
-  margin: 25px;
-  position: absolute;
-  top: 0; 
-  right: 0;
-  bottom: 0; 
-  left: 0;
+  width: 100%;
+  height: 100%;
   background: var(--transparent-black) url(../img/svg/icon-gallery-z.svg) no-repeat center center;
   box-shadow: 0 0 0 25px rgba(0, 0, 0, 0) inset;
   background-repeat:no-repeat;
@@ -710,9 +717,25 @@ body {
   transition: all .3s ease;
 }
 
-.gallery__item:hover::after {
+.gallery__item--active:hover .gallery__item--hover {
   opacity: 1;
 }
+
+.gallery__item--active {
+  display: flex;
+  position: absolute;
+  padding: 25px;
+  top: 0; 
+  right: 0;
+  bottom: 0; 
+  left: 0;
+  transition: all .3s ease;
+}
+
+.gallery__item--active:active  {
+  background: #7843a45d;
+}
+
 
 .gallery__item:nth-child(3n) {
   margin-right: 0px;
