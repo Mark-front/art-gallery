@@ -1,4 +1,6 @@
-function swiperPagonation(swiperContainer, outCurrent, outTotal, btnPrev, btnNext) {
+function swiperPagonation(swiperContainer, btnPrev, btnNext) {
+  let outCurrent = swiperContainer.querySelector(".nav-and-pagination__pagination-current");
+  let outTotal = swiperContainer.querySelector(".nav-and-pagination__pagination-total");
   outCurrent.innerText = swiperContainer.querySelector(".swiper-pagination-current").innerText;
   outTotal.innerText = swiperContainer.querySelector(".swiper-pagination-total").innerText;
 
@@ -10,4 +12,15 @@ function swiperPagonation(swiperContainer, outCurrent, outTotal, btnPrev, btnNex
   });
 }
 
-swiperPagonation(document.querySelector(".gallery__swiper"), document.querySelector(".gallary__pagination-current"), document.querySelector(".gallary__pagination-total"), document.querySelector(".swiper-button-prev"), document.querySelector(".swiper-button-next"));
+document.addEventListener('DOMContentLoaded', () => {
+  swiperPagonation(
+    document.querySelector(".gallery__swiper-container"),
+    document.querySelector(".swiper-button-prev"),
+    document.querySelector(".swiper-button-next")
+  );
+  swiperPagonation(
+    document.querySelector(".publication__swiper-container"),
+    document.querySelector(".publication__swiper-button-prev"),
+    document.querySelector(".publication__swiper-button-next")
+  );
+})

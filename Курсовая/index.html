@@ -228,17 +228,17 @@
             </p>
           </div>
           <div class="gallery__swiper-container">
-            <div class="gallary__swiper-pagination">
+            <div class="gallery__swiper-pagination nav-and-pagination">
               <div class="swiper-button-prev"></div>
-              <div class="gallary__pagination">
-                <span class="gallary__pagination-current"></span>
+              <div class="nav-and-pagination__pagination">
+                <span class="nav-and-pagination__pagination-current"></span>
                 <span>/</span>
-                <span class="gallary__pagination-total"></span>
+                <span class="nav-and-pagination__pagination-total"></span>
               </div>
               <div class="swiper-button-next"></div>
             </div>
             <div class="swiper-container gallery__swiper">
-              <div class="swiper-pagination"></div>
+              <div class="gallery__pagination"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                         <ul class="list gallery__list">
@@ -422,7 +422,7 @@
               </li>
               <li class="flags__item">
                 <input id="ital" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="ital"></label>
+                <label class="flags__country" for="ital" checked></label>
               </li>
               <li class="flags__item">
                 <input id="rus" class="flags__radio" name="country" type="radio">
@@ -493,7 +493,7 @@
                   <a class="accordion__link" href="#">Андреа Верроккьо</a>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
+                  <a class="accordion__link accordion__link--active" href="#"> Доменико Гирландайо</a>
                 </li>
                 <li class="accordion__item">
                   <a class="accordion__link" href="#">Беноццо Гоццоли</a>
@@ -1025,307 +1025,296 @@
         </div>
       </div>
     </section>
-    <section class="section-events">
-      <div class="container">
-        <h2 class="section-header">События</h2>
-        <input id="events-btn" type="checkbox" class="section-events-checkbox">
-        <label for="events-btn" class="section-events-checkbox-btn">Все события</label>
-        <ul class="list section-events-list">
-          <li class="section-events-item" >
-            <p class="text mini-text">
+    <section class="events">
+      <div class="container events__content">
+        <h2 class="section-header events__header">События</h2>
+        <ul class="list events__list">
+          <li class="events__item event-card" >
+            <p class="text event-card__mini-text">
               Музей им. Щусева <br> с 20 марта по 30 апреля
             </p>
-            <h3 class="section-events-item-header">
+            <h3 class="event-card__header">
               Книжная гравюра в живом восприятии
             </h3>
-            <p class="text section-events-item-text">
-              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+            <p class="text event-card__text">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
             </p>
-            <a href="#" class="section-events-item-link">
+            <a href="#" class="event-card__link">
               Подробнее
             </a>
           </li>
-          <li class="section-events-item" >
-            <p class="text mini-text">
+          <li class="events__item event-card">
+            <p class="text event-card__mini-text">
               ММОМА <br> 24 марта 19:00
             </p>
-            <h3 class="section-events-item-header">
+            <h3 class="event-card__header">
               «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
             </h3>
-            <p class="text section-events-item-text">
-              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...
+            <p class="text event-card__text">
+              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
             </p>
-            <a href="#" class="section-events-item-link">
+            <a href="#" class="event-card__link">
               Подробнее
             </a>
           </li>
-          <li class="section-events-item" >
-            <p class="text mini-text">
+          <li class="events__item event-card">
+            <p class="text event-card__mini-text">
               Еврейский музей <br> с 31 марта по 21 апреля
             </p>
-            <h3 class="section-events-item-header">
+            <h3 class="event-card__header">
               Выставка «Формация 2020»
             </h3>
-            <p class="text section-events-item-text">
-              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
+            <p class="text event-card__text">
+              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
             </p>
-            <a href="#" class="section-events-item-link">
+            <a href="#" class="event-card__link">
               Подробнее
             </a>
           </li>
-          <li class="section-events-item" >
-            <p class="text mini-text">
+          <li class="events__item event-card">
+            <p class="text event-card__mini-text">
               Третьяковка на Крымском валу <br> с 30 марта по 30 апреля
             </p>
-            <h3 class="section-events-item-header">
+            <h3 class="event-card__header">
               XXIV Международная биеннале молодого искусства
             </h3>
-            <p class="text section-events-item-text">
-              Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
+            <p class="text event-card__text">
+              Внезапно, реплицированные с зарубежных источников, современные исследования.
             </p>
-            <a href="#" class="section-events-item-link">
+            <a href="#" class="event-card__link">
               Подробнее
             </a>
           </li>
-          <li class="section-events-item" >
-            <p class="text mini-text">
+          <li class="events__item event-card">
+            <p class="text event-card__mini-text">
               ММАМ <br> с 8 апреля по 20 мая
             </p>
-            <h3 class="section-events-item-header">
+            <h3 class="event-card__header">
               Джон Винзор. Фотографии из серии «Метафора серебра»
             </h3>
-            <p class="text section-events-item-text">
-              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+            <p class="text event-card__text">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
             </p>
-            <a href="#" class="section-events-item-link">
+            <a href="#" class="event-card__link">
               Подробнее
             </a>
           </li>
         </ul>
+        <button class="events__btn">
+          Все события
+        </button>
       </div>
     </section>
-    <section class="section-publications">
-      <div class="container">
-        <h2 class="publications-header">Издания</h2>
-        <div class="categories-box">
-          <h3 class="categories-header">
+    <section class="publications">
+      <div class="container publications__content">
+        <div class="publications__first-half-content">
+          <h2 class="publications__header section-header">Издания</h2>
+        <div class="publications__categories categories">
+          <h3 class="categories__header">
             Категории
           </h3>
-          <form action="https://jsonplaceholder.typicode.com/todos/1" class="categories-form">
+          <form class="categories__form" action="https://jsonplaceholder.typicode.com/todos/1">
             <input id="bestsellers" type="radio" name="category">
-            <label class="label-categories bestsellers" for="bestsellers">Бестселлеры</label>
+            <label class="categories__label" for="bestsellers">Бестселлеры</label>
             <input id="art" type="radio" name="category">
-            <label class="label-categories art" for="art">Искусство</label>
+            <label class="categories__label" for="art">Искусство</label>
             <input id="architecture" type="radio" name="category">
-            <label class="label-categories architecture" for="architecture">Архитектура</label>
+            <label class="categories__label" for="architecture">Архитектура</label>
             <input id="design" type="radio" name="category">
-            <label class="label-categories design" for="design">Дизайн</label>
+            <label class="categories__label categories__label--active" for="design">Дизайн</label>
             <input id="fashion" type="radio" name="category">
-            <label class="label-categories fashion" for="fashion">Мода</label>
+            <label class="categories__label" for="fashion">Мода</label>
             <input id="children" type="radio" name="category">
-            <label class="label-categories children" for="children">Детям</label>
+            <label class="categories__label" for="children">Детям</label>
             <input id="fiction" type="radio" name="category">
-            <label class="label-categories fiction" for="fiction">Художественная литература</label>
+            <label class="categories__label" for="fiction">Художественная литература</label>
             <input id="journalism" type="radio" name="category">
-            <label class="label-categories journalism" for="journalism">Публицистика</label>
+            <label class="categories__label" for="journalism">Публицистика</label>
             <input id="travel-guides" type="radio" name="category">
-            <label class="label-categories travel-guides" for="travel-guides">Путеводители</label>
+            <label class="categories__label" for="travel-guides">Путеводители</label>
             <input id="philosophy" type="radio" name="category">
-            <label class="label-categories philosophy" for="philosophy">Философия</label>
+            <label class="categories__label" for="philosophy">Философия</label>
             <input id="educational-literature" type="radio" name="category">
-            <label class="label-categories educational-literature" for="educational-literature">Учебная литература</label>
+            <label class="categories__label" for="educational-literature">Учебная литература</label>
             <input id="magazines-and-newspapers" type="radio" name="category">
-            <label class="label-categories magazines-and-newspapers" for="magazines-and-newspapers">Журналы и газеты</label>
+            <label class="categories__label" for="magazines-and-newspapers">Журналы и газеты</label>
           </form>
         </div>
-        <div class="prise-box">
-          <h3 class="prise-header">
+        <div class="prise">
+          <h3 class="prise__header">
             Цена
           </h3>
-          <form action="https://jsonplaceholder.typicode.com/todos/1" class="prise-form">
-            <span class="prise-form-text--from" >От</span>
-            <input type="text" name="min-prise" class="enter-prise">
-            <span class="prise-form-text--before" >до</span>
-            <input type="text" name="max-prise" class="enter-prise">
-            <span class="prise-form-text--rub" >руб.</span>
+          <form class="prise__form prise-form" action="https://jsonplaceholder.typicode.com/todos/1">
+            <span class="prise-form__span" >От</span>
+            <input class="prise-form__text" type="text" name="min-prise" value="50">
+            <span class="prise-form__span" >до</span>
+            <input class="prise-form__text" type="text" name="max-prise" value="25000">
+            <span class="prise-form__span" >руб.</span>
           </form>
         </div>
-        <div class="swiper-container swiper-container-books">
+      </div>
+      <div class="publication__swiper-container">
+        <div class="publication__swiper-pagination nav-and-pagination">
+          <div class="publication__swiper-button-prev"></div>
+          <div class="nav-and-pagination__pagination">
+            <span class="nav-and-pagination__pagination-current"></span>
+            <span>/</span>
+            <span class="nav-and-pagination__pagination-total"></span>
+          </div>
+          <div class="publication__swiper-button-next"></div>
+        </div>
+        <div class="swiper-container publications__swiper">
+          <div class="publication__pagination"></div>
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <ul class="list books-list">
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-111.png" alt="">
-                    <p class="text prise-book">
+                <ul class="list publications__books-list">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-111.png" alt="">
+                    <p class="text book__prise">
                       620 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Искусство цвета
-                      </p>
-                      <p class="text name-creator">
-                        Иттен, Иоханнес 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Искусство цвета
+                    </p>
+                    <p class="text book__author">
+                      Иттен, Иоханнес 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-112.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-112.png" alt="">
+                    <p class="text book__prise">
                       2450 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Типографика
-                      </p>
-                      <p class="text name-creator">
-                        Рудер, Эмиль  
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Типографика
+                    </p>
+                    <p class="text book__author">
+                      Рудер, Эмиль  
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-113.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-113.png" alt="">
+                    <p class="text book__prise">
                       2200 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Книга про буквы
-                      </p>
-                      <p class="text name-creator">
-                        Гордон, Юрий 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Книга про буквы
+                    </p>
+                    <p class="text book__author">
+                      Гордон, Юрий 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="list books-list">
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-114.png" alt="">
-                    <p class="text prise-book">
+                <ul class="list publications__books-list">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-114.png" alt="">
+                    <p class="text book__prise">
                       1100 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Николай Ильин
-                      </p>
-                      <p class="text name-creator">
-                        Кричевский, Владимир 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Николай Ильин
+                    </p>
+                    <p class="text book__author">
+                      Кричевский, Владимир 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-115.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-115.png" alt="">
+                    <p class="text book__prise">
                       1450 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Модульные сетки в граф...
-                      </p>
-                      <p class="text name-creator">
-                        Мюллер-Брокманн, Йозеф 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Модульные сетки в граф...
+                    </p>
+                    <p class="text book__author">
+                      Мюллер-Брокманн, Йозеф 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-116.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-116.png" alt="">
+                    <p class="text book__prise">
                       3200 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Эволюция графических ст...
-                      </p>
-                      <p class="text name-creator">
-                        Хеллер, Чваст 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Эволюция графических ст...
+                    </p>
+                    <p class="text book__author">
+                      Хеллер, Чваст 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="list books-list">
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-117.png" alt="">
-                    <p class="text prise-book">
+                <ul class="list publications__books-list">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-117.png" alt="">
+                    <p class="text book__prise">
                       2200 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Искусство и визуальное в...
-                      </p>
-                      <p class="text name-creator">
-                        Арнхейм, Рудольф 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Искусство и визуальное в...
+                    </p>
+                    <p class="text book__author">
+                      Арнхейм, Рудольф 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-111.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-111.png" alt="">
+                    <p class="text book__prise">
                       620 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Искусство цвета
-                      </p>
-                      <p class="text name-creator">
-                        Иттен, Иоханнес 
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Искусство цвета
+                    </p>
+                    <p class="text book__author">
+                      Иттен, Иоханнес 
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
-                  <li class="books-item">
-                    <img class="image-slider-book" src="img/png/Rectangle-112.png" alt="">
-                    <p class="text prise-book">
+                  <li class="publications__book book">
+                    <img class="book__image" src="img/png/Rectangle-112.png" alt="">
+                    <p class="text book__prise">
                       2450 руб
                     </p>
-                    <div class="name-author-book-box">
-                      <p class="text name-book">
-                        Типографика
-                      </p>
-                      <p class="text name-creator">
-                        Рудер, Эмиль  
-                      </p>
-                    </div>
-                    <a href="#" class="order-book-link">
+                    <p class="text book__name">
+                      Типографика
+                    </p>
+                    <p class="text book__author">
+                      Рудер, Эмиль  
+                    </p>
+                    <a href="#" class="book__order">
                       Заказать
                     </a>
                   </li>
                 </ul>
               </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-      
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-      
-          <script src="swiper/swiper.js"></script>
+      </div>
       </div>
       </div>
     </section>
@@ -1488,9 +1477,12 @@
   <script src="js/swiper/swiper.js"></script>
   <script src="js/swiper/mySwiper.js"></script>
   <script src="js/swiper/heroSwiper.js"></script>
-  <script src="js/swiper/swiperPagination.js"></script>
   <script src="js/focus.js"></script>
   <script src="js/accordion/accordion.js"></script>
   <script src="js/catalog-radio.js"></script>
+  <script src="js/events-btn.js"></script>
+  <script src="js/categories-check.js"></script>
+  <script src="js/swiper/publicationsSwiper.js"></script>
+  <script src="js/swiper/swiperPagination.js"></script>
 </body>
 </html>
