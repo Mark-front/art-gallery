@@ -205,6 +205,7 @@
         <div class="gallery__content">
           <div class="gallery__filter-and-text-bottom">
             <h2 class="gallery__header section-header">
+              <a id="gallery"></a>
               Галерея
             </h2>
             <div class="gallery__filter filter">
@@ -410,47 +411,38 @@
       <div class="container">
         <div class="catalog__head">
           <h2 class="section-header catalog__header">Каталог</h2>
-          <form class="catalog__flags flags" action="https://jsonplaceholder.typicode.com/todos/1">
-            <ul class="list flags__list">
+            <ul class="list catalog__flags flags flags__list">
               <li class="flags__item">
-                <input id="franc" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="franc"></label>
+                <button class="flags__country" for="franc"></button>
               </li>
               <li class="flags__item">
-                <input id="ger" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="ger"></label>
+                <button class="flags__country" for="ger"></button>
               </li>
               <li class="flags__item">
-                <input id="ital" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="ital" checked></label>
+                <button class="flags__country" for="ital" checked></button>
               </li>
               <li class="flags__item">
-                <input id="rus" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="rus"></label>
+                <button class="flags__country" for="rus"></button>
               </li>
               <li class="flags__item">
-                <input id="belg" class="flags__radio" name="country" type="radio">
-                <label class="flags__country" for="belg"></label>
+                <button class="flags__country" for="belg"></button>
               </li>
             </ul>
-          </form>
         </div>
         <p class="text catalog__text">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
         </p>
         <div class="catalog__foot">
           <div class="catalog__about-the-artist about-the-artist">
-            <img class="about-the-artist__img" src="img/png/image 3.png" alt="">
+            <img class="about-the-artist__img" src="#" alt="">
             <div class="about-the-artist__inform">
               <h3 class="about-the-artist__name">
-                Доменико Гирландайо
               </h3>
               <p class="text about-the-artist__life-year">
-                2 июня 1448 — 11 января 1494. 
               </p>
               <p class="text about-the-artist__text">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
               </p>
+              <a href="#gallery" class="to-gallary-link"></a>
             </div>
           </div>
           <div class="catalog__accordion accordion" id="accordion">
@@ -458,568 +450,168 @@
             <div class="accordion__content" style="height: 341px;">
               <ul class="list accordion__list">
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
+                  <button class="accordion__btn">Бенедетто ди Биндо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
+                  <button class="accordion__btn">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
+                  <button class="accordion__btn">Биссоло, Франческо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
+                  <button class="accordion__btn">Больтраффио, Джованни</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
+                  <button class="accordion__btn">Бонсиньори, Франческо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
+                  <button class="accordion__btn">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
+                  <button class="accordion__btn">Брамантино</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
+                  <button class="accordion__btn">Бреа, Людовико</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
+                  <button class="accordion__btn">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
+                  <button class="accordion__btn">Веккьетта</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link accordion__link--active" href="#"> Доменико Гирландайо</a>
+                  <button class="accordion__btn">Андреа Верроккьо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
+                  <button class="accordion__btn accordion__btn--active" href="#"> Доменико Гирландайо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
+                  <button class="accordion__btn">Беноццо Гоццоли</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
+                  <button class="accordion__btn">Граначчи, Франческо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
+                  <button class="accordion__btn">Грегорио ди Чекко</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
+                  <button class="accordion__btn">Джованни да Удине</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
+                  <button class="accordion__btn">Джованни ди Паоло</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
+                  <button class="accordion__btn">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
+                  <button class="accordion__btn">Парентино, Бернардо</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
+                  <button class="accordion__btn">Пезеллино</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
+                  <button class="accordion__btn">Пьетро Перуджино</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__btn">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="accordion__item">
+                  <button class="accordion__btn">Пизанелло</button>
+                </li>
+                <li class="accordion__item">
+                  <button class="accordion__btn">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
             <h3>C 1500 по 1599 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="text accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
             <h3>C 1600 по 1699 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
             <h3>C 1700 по 1799 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
             <h3>C 1800 по 1899 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
             <h3>C 1900 по 1999 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
             <h3>C 2000 г.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бенедетто ди Биндо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бергоньоне, Амброджо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Биссоло, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Больтраффио, Джованни</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бонсиньори, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Боттичини, Рафаэлло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Брамантино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бреа, Людовико</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Бьяджо д’Антонио Туччи</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Веккьетта</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Андреа Верроккьо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#"> Доменико Гирландайо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Беноццо Гоццоли</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Граначчи, Франческо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Грегорио ди Чекко</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни да Удине</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джованни ди Паоло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Джорджоне</a>
-                </li>
-              </ul>
-              <ul class="list accordion__list">
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Парентино, Бернардо</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пезеллино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пьетро Перуджино</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Перуцци, Бальдассаре</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пизанелло</a>
-                </li>
-                <li class="accordion__item">
-                  <a class="accordion__link" href="#">Пинтуриккьо</a>
-                </li>
-              </ul>
+              <div class="accordion__none-block">
+                <span class="accordion__none-block--inside"></span>
+              </div>
+              <div class="accordion__none-text-box">
+                <h4 class="accordion__none-header">Здесь пока пусто</h4>
+                <p class="accordion__none-text">
+                  А в галерее вы всегда можете найти что-то интересное для себя
+                </p>
+                <a href="#gallery" class="to-gallary-link">
+                  В галерею
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1313,68 +905,82 @@
                   </li>
                 </ul>
               </div>
+            </div>
           </div>
-      </div>
-      </div>
-      </div>
-    </section>
-    <section class="section-projects">
-      <div class="container">
-        <h2 class="section-header">Проекты</h2>
-      <p class="text section-projects-text">
-        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
-        <span class="simptip-position-top" data-tooltip="Пример современных тенденций - современная методология разработки ">
-          <img src="img/svg/i-Тултип.svg" alt="">
-        </span>
-          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
-        <span class="simptip-position-top" data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  ">
-          <img src="img/svg/i-Тултип.svg" alt="">
-        </span>
-         исключительно в разрезе маркетинговых и финансовых 
-        <span class="simptip-position-top" data-tooltip="В стремлении повысить качество ">
-          <img src="img/svg/i-Тултип.svg" alt="">
-        </span>
-        предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-      </p>
-      <a class="section-projects-text-link" href="#">blanchard-art.ru/projects/about</a>
-      <h3 class="project-partners-header">
-        Партнёры проектов:
-      </h3>
-      <div class="swiper-container swiper-container-partners">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <ul class="list partners-list">
-                <li class="partners-item-1"></li>
-                <li class="partners-item-2"></li>
-                <li class="partners-item-3"></li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <ul class="list partners-list">
-                <li class="partners-item-4"></li>
-                <li class="partners-item-5"></li>
-                <li class="partners-item-6"></li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <ul class="list partners-list">
-                <li class="partners-item-7"></li>
-                <li class="partners-item-8"></li>
-                <li class="partners-item-9"></li>
-              </ul>
-            </div>
         </div>
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-partners-prev"></div>
-        <div class="swiper-button-partners-next"></div>
-      </div>
       </div>
     </section>
-    <section class="section-contacts">
+    <section class="projects">
       <div class="container">
-        <h2 class="section-header">Контакты</h2>
-        <div class="contact-address-and-form">
+        <h2 class="section-header projects__header">Проекты</h2>
+        <p class="text projects__text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское 
+          <span class="projects__tooltip" data-tooltip="Пример современных тенденций - современная методология разработки "></span>
+          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
+          <span class="projects__tooltip" data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></span>
+          исключительно в разрезе маркетинговых и финансовых 
+          <span class="projects__tooltip" data-tooltip="В стремлении повысить качество "></span>
+          предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
+          <a class="projects__link" href="#">blanchard-art.ru/projects/about</a>
+        </p>
+        <h3 class="projects__partners-header">
+          Партнёры проектов:
+        </h3>
+        <div class="partners__swiper-container">
+          <div class="partners__button-prev"></div>
+          <div class="swiper-container partners__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <ul class="list partners__list">
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--1" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--2" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--3" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul class="list partners__list">
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--4" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--5" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--6" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul class="list partners__list">
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--7" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--8" href="#"></a>
+                    </li>
+                    <li class="partners__item">
+                      <a class="partners__link partners__link--9" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+          </div>
+          <div class="partners__button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="section-header contacts__header">Контакты</h2>
+        <div class="contacts__address-and-form">
           <h3 class="showroom-header">Шоурум №4</h3>
           <p class="text address">
             Леонтьевский переулок, дом 5, строение 1
@@ -1399,7 +1005,7 @@
             </div>
           </div>
         </div>
-        <div class="map-conteiner">
+        <!-- <div class="map-conteiner">
           <div id="map" style="width: 1238px; height: 700px"></div>
         </div>
           <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
@@ -1438,7 +1044,7 @@
                 myMap.geoObjects.add(myGeoObject);
                 myMap.geoObjects.add(myPlacemark);
             }
-          </script>
+          </script> -->
       </div>
     </section>
   </main>
@@ -1484,5 +1090,7 @@
   <script src="js/categories-check.js"></script>
   <script src="js/swiper/publicationsSwiper.js"></script>
   <script src="js/swiper/swiperPagination.js"></script>
+  <script src="js/accordion/accordion-state.js"></script>
+  <script src="js/accordion/accordion-btn-work.js"></script>
 </body>
 </html>
