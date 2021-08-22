@@ -1051,16 +1051,21 @@ html .ui-button.ui-state-disabled:active {
   outline: none;
 }
 
-.accordion__content {
+.accordion__none-box {
   display: flex;
   align-items: center;
+  height: 288px;
 }
 
 .accordion__list {
+  display: none;
+}
+
+.accordion__list--visible {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 289px;
+  height: 288px;
 }
 
 .accordion__item {
@@ -1101,6 +1106,10 @@ html .ui-button.ui-state-disabled:active {
   padding: 12px;
   margin-right: 24px;
   border: 2px solid #B7B7B7;
+}
+
+.accordion__none-box--hiden {
+  display: none;
 }
 
 .accordion__none-block--inside {
