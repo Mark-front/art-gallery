@@ -949,6 +949,7 @@ body {
 /* section-catalog-accordion */
 
 .catalog__accordion {
+  /* height: 1145px; */
   width: 800px;
 }
 
@@ -1054,7 +1055,7 @@ html .ui-button.ui-state-disabled:active {
 .accordion__none-box {
   display: flex;
   align-items: center;
-  height: 288px;
+  height: 189px;
 }
 
 .accordion__list {
@@ -1062,14 +1063,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .accordion__list--visible {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 288px;
-}
-
-.accordion__item {
-  margin-right: 62px;
+  display: block;
+  columns: 3 200px;
 }
 
 .accordion__btn {
@@ -1159,6 +1154,7 @@ html .ui-button.ui-state-disabled:active {
 /* section-events */
 
 .events {
+  padding-top: 8px;
   margin-bottom: 140px;
 }
 
@@ -1182,6 +1178,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .event-card {
+  position: relative;
   padding: 313px 0px 50px 50px;
   width: 500px;
   border: 1px solid var(--accordion-border);
@@ -1192,32 +1189,21 @@ html .ui-button.ui-state-disabled:active {
   margin-bottom: 50px;
 }
 
-.events__item:nth-child(1) {
-  background: url(../img/png/Rectangle\ 101.png) no-repeat;
-}
-
-.events__item:nth-child(2) {
-  background: url(../img/png/Rectangle\ 102.png) no-repeat;
-}
-
-.events__item:nth-child(3) {
-  background: url(../img/png/Rectangle\ 103.png) no-repeat;
-}
-
-.events__item:nth-child(4) {
-  background: url(../img/png/Rectangle\ 104.png) no-repeat;
-}
-
-.events__item:nth-child(5) {
-  background: url(../img/png/Rectangle\ 105.png) no-repeat;
-}
-
 .events__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .events__item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.event-card__img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 300px;
 }
 
 .event-card__mini-text {
@@ -1282,7 +1268,8 @@ html .ui-button.ui-state-disabled:active {
   box-shadow: 0 0 0 2px var(--btn-color);
   border-radius: 30px;
   color: var(--btn-color);
-  transition: color, background-color, box-shadow .3s ease;
+  transition-property: color, background-color, box-shadow;
+  transition: .3s ease;
 }
 
 .events__btn:hover {
@@ -1754,7 +1741,15 @@ html .ui-button.ui-state-disabled:active {
 
 /* section-contacts */
 
-.contacts {
+.contacts__content {
+  position: relative;
+  display: flex;
+}
+
+.container--full {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--accordion-border);
 }
 
 .contacts__header {
@@ -1762,56 +1757,53 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .contacts__address-and-form {
-  width: 700px;
+  width: 522px;
+  padding: 125px 0 0;
   margin: 0;
-  border-top: 1px solid #CACACA;
+  border-right: 1px solid var(--accordion-border);
 }
 
-.showroom-header {
+.contacts__showroom-header {
+  margin: 0 0 6px 0;
   font-weight: 600;
   font-size: 24px;
 }
 
-.address {
+.contacts__address {
+  margin: 0 0 28px 0;
   font-size: 16px;
 }
 
-.social-box {
-}
-
-.order-a-call-header {
-  margin-bottom: 19px;
+.order-a-call__header {
+  margin: 0 0 16px 0;
+  font-weight: normal;
   font-size: 24px;
+  line-height: 32px;
 }
 
-.order-a-call-form {
+.order-a-call__form {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
 }
 
-.order-a-call {
-  margin-left: 178px;
+.contacts__order-a-call {
+  margin: 0 0 37px 0;
 }
 
-.name,
-.tel {
+.order-a-call__input {
   width: 400px;
-  height: 40px;
-  padding-left: 24px;
+  padding: 11px 0 9px 24px;
+  margin-bottom: 23px;
   border: 1px solid #333333;
   border-radius: 100px;
 }
 
-.name::placeholder,
-.tel::placeholder {
+.order-a-call__input::placeholder{
   color: #999;
 }
 
-.tel {
-}
-
-.btn-call {
+.order-a-call__btn {
   width: 157px;
   height: 59px;
   background-color: #FFF;
@@ -1823,39 +1815,48 @@ html .ui-button.ui-state-disabled:active {
   color: #9D5CD0;
 }
 
-.btn-call:hover {
+.order-a-call__btn:hover {
   background: #9D5CD0;
   color: #FFF;
 }
 
-.btn-call:active {
+.order-a-call__btn:active {
   background: #7943A4;
   border: 3px solid #D1A9F0;
 }
 
 
-.what-tel-box {
+.contacts__social {
   display: flex;
   flex-wrap: nowrap;
-  width: 110px;
+  padding: 0 0 125px 0;
 }
 
-.contact-one-click {
-  margin-left: -1px;
-  font-weight: 600;
+.contacts__one-click {
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  line-height: 32px;  
   font-size: 24px;
 }
 
-.whatsapp,
-.tellegram {
+.contacts__whatsapp {
+  background: url(../img/svg/Whatsapp-Icon.svg) no-repeat;
+}
+
+.contacts__tellegram {
+  background: url(../img/svg/Telegram_2019_Logo.svg) no-repeat;
+}
+
+.contacts__whatsapp,
+.contacts__tellegram {
   display: block;
-  width: 40px;
-  height: 40px;
+  padding: 20px;
   margin-right: 20px;
 }
 
-.map-conteiner {
-  position: relative;
+.contacts__map {
+  position: absolute;
+  left: 522px;
 }
 
 /* footer */

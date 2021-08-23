@@ -59,6 +59,20 @@ const arrAllArtist = {
   },
 };
 
+//Изменение высоты активного аккордиона
+function changingHeightActiveAccordion() {
+  let accordionContent;
+  const activeAccordion = document.querySelector('.ui-accordion-content-active');
+  console.log(activeAccordion.querySelector('.accordion__list').querySelector('.accordion__item'))
+  if(activeAccordion.querySelector('.accordion__list').querySelector('.accordion__item') !== null) {
+    accordionContent = activeAccordion.querySelector('.accordion__list');
+  } else {
+    accordionContent = activeAccordion.querySelector('.accordion__none-box');
+  }
+  console.log(accordionContent.clientHeight+50, accordionContent)
+  activeAccordion.style.height = (accordionContent.clientHeight+50) + 'px';
+}
+
 //создание item списка художников 
 function createAccordionItem(artistName, artistActive) {
   const item = document.createElement("li");
@@ -136,7 +150,17 @@ function accordionBtnWork() {
   });
 
   artistShow(artistActive);
-} 
+}
+
+//Функция клика на заголовок аккордиона
+function accordionHeadClik() {
+  document.querySelectorAll('.ui-accordion-header').forEach(header => {
+    header.addEventListener("click", () => {
+      console.log(1)
+      changingHeightActiveAccordion();
+    });
+  });
+}
 
 //работа кнопок с флагами стран
 function flagsBtnWork() {
@@ -153,6 +177,7 @@ function flagsBtnWork() {
         const country = radio.value;
         completionAccordion(country, arrAllArtist);
         accordionBtnWork();
+        changingHeightActiveAccordion()
 
         document.querySelectorAll(".flags__country").forEach(radioCheck => {
           if(radioCheck.hasAttribute("checked")) {
@@ -169,4 +194,6 @@ function flagsBtnWork() {
 
 document.addEventListener("DOMContentLoaded", () => {
   flagsBtnWork();
+  changingHeightActiveAccordion();
+  accordionHeadClik();
 });
