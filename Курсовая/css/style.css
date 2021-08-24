@@ -819,6 +819,11 @@ body {
 }
 
 /* section-catalog */
+
+.catalog {
+  margin-bottom: 85px;
+}
+
 .catalog__head {
   display: flex;
   margin-bottom: 13px;
@@ -1114,10 +1119,6 @@ html .ui-button.ui-state-disabled:active {
   background: #B7B7B7;
 }
 
-.accordion__none-text-box {
-  height: 165px;
-}
-
 .accordion__none-header {
   color: var(--text);
   font-weight: 600;
@@ -1170,7 +1171,6 @@ html .ui-button.ui-state-disabled:active {
 
 .events__list {
   display: flex;
-  max-height: 750px;
   overflow: hidden;
   flex-wrap: wrap;
   transition-property: height;
