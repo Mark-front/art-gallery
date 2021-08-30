@@ -676,30 +676,66 @@
             Категории
           </h3>
           <form class="categories__form" action="https://jsonplaceholder.typicode.com/todos/1">
-            <input id="bestsellers" type="radio" name="category">
-            <label class="categories__label" for="bestsellers">Бестселлеры</label>
-            <input id="art" type="radio" name="category">
-            <label class="categories__label" for="art">Искусство</label>
-            <input id="architecture" type="radio" name="category">
-            <label class="categories__label" for="architecture">Архитектура</label>
-            <input id="design" type="radio" name="category">
-            <label class="categories__label categories__label--active" for="design">Дизайн</label>
-            <input id="fashion" type="radio" name="category">
-            <label class="categories__label" for="fashion">Мода</label>
-            <input id="children" type="radio" name="category">
-            <label class="categories__label" for="children">Детям</label>
-            <input id="fiction" type="radio" name="category">
-            <label class="categories__label" for="fiction">Художественная литература</label>
-            <input id="journalism" type="radio" name="category">
-            <label class="categories__label" for="journalism">Публицистика</label>
-            <input id="travel-guides" type="radio" name="category">
-            <label class="categories__label" for="travel-guides">Путеводители</label>
-            <input id="philosophy" type="radio" name="category">
-            <label class="categories__label" for="philosophy">Философия</label>
-            <input id="educational-literature" type="radio" name="category">
-            <label class="categories__label" for="educational-literature">Учебная литература</label>
-            <input id="magazines-and-newspapers" type="radio" name="category">
-            <label class="categories__label" for="magazines-and-newspapers">Журналы и газеты</label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Бестселлеры
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Искусство
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Архитектура
+            </label>
+            <label class="categories__label categories__label--active check">
+              <input class="check__input visually-hidden" type="checkbox" name="category" checked>
+              <span class="check__box"></span>
+              Дизайн
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Мода
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Детям
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Художественная литература
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Публицистика
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Путеводители
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" id="philosophy" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Философия
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Учебная литература
+            </label>
+            <label class="categories__label check">
+              <input class="check__input visually-hidden" type="checkbox" name="category">
+              <span class="check__box"></span>
+              Журналы и газеты
+            </label>
           </form>
         </div>
         <div class="prise">
@@ -708,9 +744,9 @@
           </h3>
           <form class="prise__form prise-form" action="https://jsonplaceholder.typicode.com/todos/1">
             <span class="prise-form__span" >От</span>
-            <input class="prise-form__text" type="text" name="min-prise" value="50">
+            <input class="prise-form__text" oninput="this.value = this.value.replace(/[^\d]/g,'');" type="text" name="min-prise" value="50">
             <span class="prise-form__span" >до</span>
-            <input class="prise-form__text" type="text" name="max-prise" value="25000">
+            <input class="prise-form__text" oninput="this.value = this.value.replace(/[^\d]/g,'');" type="text" name="max-prise" value="25000">
             <span class="prise-form__span" >руб.</span>
           </form>
         </div>
@@ -962,8 +998,12 @@
               <div class="contacts__order-a-call order-a-call">
                 <h3 class="order-a-call__header">Заказать обратный звонок</h3>
                 <form class="order-a-call__form" action="https://jsonplaceholder.typicode.com/posts" id="call" method="POST" >
-                  <input class="order-a-call__input" type="text" name="name" placeholder="Имя*">
-                  <input class="order-a-call__input" type="tel" name="tel" placeholder="Телефон*">
+                  <label class="order-a-call__label">
+                    <input class="order-a-call__input" type="text" data-validate-field="name" name="name" placeholder="Имя*">
+                  </label>
+                  <label class="order-a-call__label">
+                    <input class="order-a-call__input" type="tel" data-validate-field="tel" name="tel" placeholder="Телефон*">
+                  </label>
                   <button class="order-a-call__btn" type="submit">Заказать</button>
                 </form>
               </div>
@@ -983,29 +1023,23 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-nav-logo">
-      <a href="#" class="logo-img-link">
-        <img src="img/svg/logo.svg" alt="">
-      </a>
-    </div>
-    <ul class="list footer-social-list">
-      <li class="footer-social-item">
-        <a href="#" class="footer-social-item-link">
-          <img src="img/svg/vk.svg" alt="">
+  <footer class="footer">
+      <div class="container footer__content">
+        <a href="#" class="logo footer__logo">
+          <img src="img/svg/logo.svg" alt="логотип сайта">
         </a>
-      </li>
-      <li class="footer-social-item">
-        <a href="#" class="footer-social-item-link">
-          <img src="img/svg/instagram.svg" alt="">
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a href="#" class="footer-social-item-link">
-          <img src="img/svg/fb.svg" alt="">
-        </a>
-      </li>
-    </ul>
+        <ul class="list footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--vk"></a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--inst"></a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--fb"></a>
+          </li>
+        </ul>
+      </div>
   </footer>
   <script src="js/swiper/swiper-bundle.js"></script>
   <script src="js/swiper/swiper-bundle.min.js"></script>
@@ -1029,5 +1063,8 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="js/map.js"></script>
   <script src="js/jquery/anchor-link.js"></script>
+  <script src="js/jquery/inputmask.min.js"></script>
+  <script src="js/jquery/just-validate.min.js"></script>
+  <script src="js/mask-and-valid.js"></script>
 </body>
 </html>

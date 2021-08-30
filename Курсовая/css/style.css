@@ -111,6 +111,7 @@
 --accordion-icon: #ececec;
 --accordion-icon-hover: #D1A9F0;;
 --transparent-black:rgba(0, 0, 0, 0.4);
+--form-input:#eaeaea;
 }
 
 a {
@@ -153,6 +154,17 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: var(--text);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .about-us,
@@ -1121,20 +1133,23 @@ html .ui-button.ui-state-disabled:active {
 
 .accordion__none-header {
   color: var(--text);
+  font-family: Open Sans;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin: 0 0 0px 0;
+  margin: 0 0 5px 0;
 }
 
 .accordion__none-text {
-  margin: 0 0 0 0;
+  font-family: Open Sans;
   line-height: 22px;
+  width: 275px;
+  margin: 0 0 5px 0;
 }
 
 .to-gallary-link {
+  font-family: Open Sans;
   font-weight: 600;
-  font-size: 16px;
   line-height: 22px;
   margin: 0;
   color: var(--btn-color);
@@ -1402,7 +1417,12 @@ html .ui-button.ui-state-disabled:active {
   width: 260px;
 }
 
-.categories__label {
+.check__input {
+  position: absolute;
+
+}
+
+.check {
   display: flex;
   width: fit-content;
   margin-bottom: 14px;
@@ -1413,8 +1433,18 @@ html .ui-button.ui-state-disabled:active {
 }
 
 
-.categories__label::before {
+/* .categories__label::before {
   content: "";
+  display: block;
+  padding: 6px;
+  margin-right: 13px;
+  box-shadow: 0 0 0 1px var(--text-not-on-white-background);
+  background: center center;
+  transition-property: box-shadow;
+  transition: .3s ease;
+} */
+
+.check__box {
   display: block;
   padding: 6px;
   margin-right: 13px;
@@ -1424,11 +1454,11 @@ html .ui-button.ui-state-disabled:active {
   transition: .3s ease;
 }
 
-.categories__label:hover {
+.check:hover {
   color: var(--btn-hover);
 }
 
-.categories__label:hover::before {
+.check:hover + .check__box {
   box-shadow: 0 0 0 1px var(--btn-hover);
 }
 
@@ -1444,16 +1474,26 @@ html .ui-button.ui-state-disabled:active {
   line-height: 32px;
 }
 
-.categories__form input {
-  display: none;
-}
-
 .categories__label--active {
   color: var(--btn-hover);
 }
 
-.categories__label--active::before {
+/* Checked */
+
+.check__input:checked + .check__box {
   background: url(../img/svg/checked-icon.svg) no-repeat center center;
+  box-shadow: 0 0 0 1px var(--btn-hover);
+}
+
+/* Focused */
+
+.check__input:focus + .check__box {
+  box-shadow: 0 0 0 1px var(--btn-hover);
+}
+
+/* Disabled */
+
+.check__input:disabled + .check__box {
   box-shadow: 0 0 0 1px var(--btn-hover);
 }
 
@@ -1791,12 +1831,34 @@ html .ui-button.ui-state-disabled:active {
   margin: 0 0 37px 0;
 }
 
+.order-a-call__label {
+  position: relative;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  bottom: 64px;
+  left: 24px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .order-a-call__input {
   width: 400px;
   padding: 11px 0 9px 24px;
   margin-bottom: 23px;
   border: 1px solid #333333;
   border-radius: 100px;
+  transition-property: background-color;
+  transition: .3s ease;
+}
+
+.order-a-call__input:hover, .order-a-call__input:focus {
+  background-color: var(--form-input);
+}
+
+.order-a-call__input:focus {
+  outline: none;
 }
 
 .order-a-call__input::placeholder{
@@ -1813,6 +1875,8 @@ html .ui-button.ui-state-disabled:active {
   font-size: 18px;
   line-height: 25px;
   color: #9D5CD0;
+  transition-property: color, background-color, border;
+  transition: .3s ease;
 }
 
 .order-a-call__btn:hover {
@@ -1839,20 +1903,46 @@ html .ui-button.ui-state-disabled:active {
   font-size: 24px;
 }
 
-.contacts__whatsapp {
-  background: url(../img/svg/Whatsapp-Icon.svg) no-repeat;
-}
-
-.contacts__tellegram {
-  background: url(../img/svg/Telegram_2019_Logo.svg) no-repeat;
-}
-
 .contacts__whatsapp,
 .contacts__tellegram {
   display: block;
   padding: 20px;
   margin-right: 20px;
+  border-radius: 35px;
+  transition-property: background-color, box-shadow;
+  transition: .3s ease;
 }
+
+.contacts__whatsapp {
+  background: rgba(48, 191, 57, 1) url(../img/svg/Whatsapp-Icon.svg) no-repeat center center;
+}
+
+.contacts__tellegram {
+  background: rgb(16%, 67%, 93%, 1) url(../img/svg/Telegram_2019_Logo.svg) no-repeat center center;
+}
+
+.contacts__whatsapp:hover, .contacts__whatsapp:focus {
+  background-color: rgba(48, 191, 57, .5);;
+}
+
+.contacts__tellegram:hover, .contacts__tellegram:focus {
+  background-color: rgb(16%, 67%, 93%, .5);
+}
+
+.contacts__whatsapp:active {
+  box-shadow: 0 0 0 1px #9643A4;
+  background-color: rgba(48, 191, 57, 1);
+}
+
+.contacts__tellegram:active {
+  box-shadow: 0 0 0 1px #9643A4;
+  background-color: rgb(16%, 67%, 93%, 1);
+}
+
+.contacts__whatsapp:focus, .contacts__tellegram:focus {
+  outline: none;
+}
+
 
 .contacts__map {
   position: absolute;
@@ -1861,24 +1951,76 @@ html .ui-button.ui-state-disabled:active {
 
 /* footer */
 
-footer {
+.footer {
+  padding: 50px 0 50px 0;
   width: 100%;
-  height: 140px;
   background: var(--background-navigation);
 }
 
-.footer-nav-logo {
-  position: relative;
-  width: 173px;
-  top: 50px;
-  left: 160px;
-}
-
-.footer-social-list {
+.footer__content {
   display: flex;
   position: relative;
 }
 
-.footer-social-item {
-  margin-left: 19px;
+.footer__list {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer__link {
+  display: block;
+  padding: 23px;
+  
+}
+
+.footer__link--vk,
+.footer__link--inst,
+.footer__link--fb {
+  transition-property: background-image;
+  transition: .3s ease;
+}
+
+.footer__link--vk {
+  background: url(../img/svg/vk.svg) no-repeat;
+}
+
+.footer__link--inst {
+  background: url(../img/svg/instagram.svg) no-repeat;
+}
+
+.footer__link--fb {
+  background: url(../img/svg/fb.svg) no-repeat;
+}
+
+/* hover */
+
+.footer__link--vk:hover, .footer__link--vk:focus {
+  background: url(../img/svg/vk-hover-focus.svg) no-repeat;
+}
+
+.footer__link--inst:hover, .footer__link--inst:focus {
+  background: url(../img/svg/instagram-hover-focus.svg) no-repeat;
+}
+
+.footer__link--fb:hover, .footer__link--fb:focus {
+  background: url(../img/svg/fb-hover-focus.svg) no-repeat;
+}
+
+/* active */
+
+.footer__link--vk:active {
+  background: url(../img/svg/vk-active.svg) no-repeat;
+}
+
+.footer__link--inst:active {
+  background: url(../img/svg/instagram-active.svg) no-repeat;
+}
+
+.footer__link--fb:active {
+  background: url(../img/svg/fb-active.svg) no-repeat;
 }
