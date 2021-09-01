@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена
 
   const list = document.querySelector(".events__list");
-  const heightList = list.querySelector('.event-card').clientHeight;
+  let heightList = list.querySelector('.event-card').clientHeight;
   list.style.maxHeight = heightList + 50 + 'px';
+  list.querySelector('.event-card').addEventListener('DOMSubtreeModified', () => {
+    heightList = list.querySelector('.event-card').clientHeight;
+    list.style.maxHeight = heightList + 50 + 'px';
+  });
+
   const smoothHeight = (itemSelector, buttonSelector, contentSelector) => { // объявляем основную функцию, которая принимает в качестве параметров селекторы элемента, кнопки внутри элемента и блока с контентом
 
     const items = document.querySelectorAll(itemSelector) // находим все элементы по переданному селектору в параметре itemSelector и записываем в константу items
