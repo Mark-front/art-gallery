@@ -676,66 +676,92 @@
             Категории
           </h3>
           <form class="categories__form" action="https://jsonplaceholder.typicode.com/todos/1">
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Бестселлеры
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Искусство
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Архитектура
-            </label>
-            <label class="categories__label categories__label--active check">
-              <input class="check__input visually-hidden" type="checkbox" name="category" checked>
-              <span class="check__box"></span>
-              Дизайн
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Мода
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Детям
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Художественная литература
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Публицистика
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Путеводители
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" id="philosophy" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Философия
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Учебная литература
-            </label>
-            <label class="categories__label check">
-              <input class="check__input visually-hidden" type="checkbox" name="category">
-              <span class="check__box"></span>
-              Журналы и газеты
-            </label>
+            <ul class="list categories__list">
+              <li class="categories__item">
+                <input id="bestsellers" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="bestsellers" class="categories__label check">
+                  Бестселлеры
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="art" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="art" class="categories__label check">
+                  Искусство
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="architecture" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="architecture" class="categories__label check">
+                  Архитектура
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="design" class="check__input visually-hidden" type="checkbox" name="category" checked>
+                <span class="check__box"></span>
+                <label for="design" class="categories__label categories__label--active check">
+                  Дизайн
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="fashion" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="fashion" class="categories__label check">
+                  Мода
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="children" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="children" class="categories__label check">
+                  Детям
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="fiction" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="fiction" class="categories__label check">
+                  Художественная литература
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="journalism" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="journalism" class="categories__label check">
+                  Публицистика
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="guidebook" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="guidebook" class="categories__label check">
+                  Путеводители
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="philosophy" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="philosophy" class="categories__label check">
+                  Философия
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="educational-literature" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="educational-literature" class="categories__label check">
+                  Учебная литература
+                </label>
+              </li>
+              <li class="categories__item">
+                <input id="magazines-newspapers" class="check__input visually-hidden" type="checkbox" name="category">
+                <span class="check__box"></span>
+                <label for="magazines-newspapers" class="categories__label check">
+                  Журналы и газеты
+                </label>
+              </li>
+            </ul>
           </form>
         </div>
         <div class="prise">
@@ -744,9 +770,9 @@
           </h3>
           <form class="prise__form prise-form" action="https://jsonplaceholder.typicode.com/todos/1">
             <span class="prise-form__span" >От</span>
-            <input class="prise-form__text" oninput="this.value = this.value.replace(/[^\d]/g,'');" type="text" name="min-prise" value="50">
+            <input class="prise-form__text" type="text" name="min-prise" value="50">
             <span class="prise-form__span" >до</span>
-            <input class="prise-form__text" oninput="this.value = this.value.replace(/[^\d]/g,'');" type="text" name="max-prise" value="25000">
+            <input class="prise-form__text" type="text" name="max-prise" value="25000">
             <span class="prise-form__span" >руб.</span>
           </form>
         </div>
@@ -921,11 +947,29 @@
         <h2 class="section-header projects__header">Проекты</h2>
         <p class="text projects__text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское 
-          <span class="projects__tooltip" data-tooltip="Пример современных тенденций - современная методология разработки "></span>
+          <span class="projects__tooltip tooltip">
+            <button class="tooltip__btn" aria-describedby="tooltip-1"></button>
+            <span class="tooltip__txt" role="tooltip" id="tooltip-1">
+              <span class="visually-hidden">Тултип: </span>
+              Пример современных тенденций - современная методология разработки
+            </span>
+          </span>
           обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
-          <span class="projects__tooltip" data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></span>
+          <span class="projects__tooltip tooltip">
+            <button class="tooltip__btn" aria-describedby="tooltip-2"></button>
+            <span class="tooltip__txt" role="tooltip" id="tooltip-2">
+              <span class="visually-hidden">Тултип: </span>
+              Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
+            </span>
+          </span>
           исключительно в разрезе маркетинговых и финансовых 
-          <span class="projects__tooltip" data-tooltip="В стремлении повысить качество "></span>
+          <span class="projects__tooltip tooltip">
+            <button class="tooltip__btn" aria-describedby="tooltip-3"></button>
+            <span class="tooltip__txt" role="tooltip" id="tooltip-3">
+              <span class="visually-hidden">Тултип: </span>
+              В стремлении повысить качество
+            </span>
+          </span>
           предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
           <a class="projects__link" href="#">blanchard-art.ru/projects/about</a>
         </p>
@@ -937,43 +981,58 @@
           <div class="swiper-container partners__swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <ul class="list partners__list">
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--1" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--2" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--3" href="#"></a>
-                    </li>
-                  </ul>
+                  <a class="partners__link partners__link--1" href="#">
+                    <img class="partners__img" src="img/png/partner-1.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-1-hover.png" alt="">
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <ul class="list partners__list">
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--4" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--5" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--6" href="#"></a>
-                    </li>
-                  </ul>
+                  <a class="partners__link partners__link--2" href="#">
+                    <img class="partners__img" src="img/png/partner-2.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-2-hover.png" alt="">
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <ul class="list partners__list">
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--7" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--8" href="#"></a>
-                    </li>
-                    <li class="partners__item">
-                      <a class="partners__link partners__link--9" href="#"></a>
-                    </li>
-                  </ul>
+                  <a class="partners__link partners__link--3" href="#">
+                    <img class="partners__img" src="img/png/partner-3.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-3-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--4" href="#">
+                    <img class="partners__img" src="img/png/partner-4.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-4-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--5" href="#">
+                    <img class="partners__img" src="img/png/partner-5.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-5-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--6" href="#">
+                    <img class="partners__img" src="img/png/partner-6.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-6-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--7" href="#">
+                    <img class="partners__img" src="img/png/partner-7.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-7-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--8" href="#">
+                    <img class="partners__img" src="img/png/partner-8.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-8-hover.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="partners__link partners__link--9" href="#">
+                    <img class="partners__img" src="img/png/partner-9.png" alt="">
+                    <img class="partners__img partners__img--hover" src="img/png/partner-9-hover.png" alt="">
+                  </a>
                 </div>
             </div>
         
@@ -1050,7 +1109,7 @@
   <script src="js/select/choices.js"></script>
   <script src="js/select/header-select.js"></script>
   <script src="js/swiper/swiper.js"></script>
-  <script src="js/swiper/mySwiper.js"></script>
+  <script src="js/swiper/partnersSwiper.js"></script>
   <script src="js/swiper/heroSwiper.js"></script>
   <script src="js/focus.js"></script>
   <script src="js/accordion/accordion.js"></script>
@@ -1066,5 +1125,6 @@
   <script src="js/jquery/inputmask.min.js"></script>
   <script src="js/jquery/just-validate.min.js"></script>
   <script src="js/mask-and-valid.js"></script>
+  <script src="js/prise-form.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 var mySwiper = new Swiper('.partners__swiper', {
   // Optional parameters
+  slidesPerView: 3,
   direction: 'horizontal',
   loop: true,
   
