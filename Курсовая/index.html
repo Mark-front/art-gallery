@@ -17,8 +17,8 @@
   <header class="header">
     <div class="header__top-header top-header">
       <div class="container top-header__content">
-        <a href="#" class="logo top-header__logo">
-          <img src="img/svg/logo.svg" alt="логотип сайта">
+        <a href="#" class="logo top-header__logo" aria-label="Логотип сайта: Blanchard">
+          <img src="img/svg/logo.svg" aria-label="Логотип сайта: Blanchard" alt="логотип сайта">
         </a>
         <nav class="nav">
           <ul class="list nav__list">
@@ -66,10 +66,10 @@
     </div> 
     <div class="header__bottom-header bottom-header">
       <div class="container bottom-header__content">
-        <ul class="list bottom-header__list">
+        <ul class="list bottom-header__list" aria-label="Выпадающие списки">
           <li class="bottom-header__item">
-            <button class="bottom-header__btn">Реализм</button>
-            <ul class="list select-list" data-simplebar>
+            <button class="bottom-header__btn" aria-label="Кнпка - открыть выпадающий список">Реализм</button>
+            <ul class="list select-list" data-simplebar aria-label="Выпадающий список">
               <li class="select-list__item">
                 <a class="select-list__link" href="#">Верроккьо</a>
               </li>
@@ -85,8 +85,8 @@
             </ul>
           </li>
           <li class="bottom-header__item">
-            <button class="bottom-header__btn">Импрессионизм</button>
-            <ul class="list select-list" data-simplebar>
+            <button class="bottom-header__btn" aria-label="Кнпка - открыть выпадающий список">Импрессионизм</button>
+            <ul class="list select-list" data-simplebar aria-label="Выпадающий список">
               <li class="select-list__item">
                 <a class="select-list__link" href="#">Ренуар</a>
               </li>
@@ -102,8 +102,8 @@
             </ul>
           </li>
           <li class="bottom-header__item">
-            <button class="bottom-header__btn">Постимпрессионизм</button>
-            <ul class="list select-list" data-simplebar>
+            <button class="bottom-header__btn" aria-label="Кнпка - открыть выпадающий список">Постимпрессионизм</button>
+            <ul class="list select-list" data-simplebar aria-label="Выпадающий список">
               <li class="select-list__item">
                 <a class="select-list__link" href="#">Сёра</a>
               </li>
@@ -119,8 +119,8 @@
             </ul>
           </li>
           <li class="bottom-header__item">
-            <button class="bottom-header__btn">Авангард</button>
-            <ul class="list select-list" data-simplebar>
+            <button class="bottom-header__btn" aria-label="Кнпка - открыть выпадающий список">Авангард</button>
+            <ul class="list select-list" data-simplebar aria-label="Выпадающий список">
               <li class="select-list__item">
                 <a class="select-list__link" href="#">Пикассо</a>
               </li>
@@ -136,8 +136,8 @@
             </ul>
           </li>
           <li class="bottom-header__item">
-            <button class="bottom-header__btn">Футуризм</button>
-            <ul class="list select-list" data-simplebar>
+            <button class="bottom-header__btn" aria-label="Кнпка - открыть выпадающий список">Футуризм</button>
+            <ul class="list select-list" data-simplebar aria-label="Выпадающий список">
               <li class="select-list__item">
                 <a class="select-list__link" href="#">Балла</a>
               </li>
@@ -154,8 +154,8 @@
           </li>
         </ul>
         <form class="bottom-header__search search" action="https://jsonplaceholder.typicode.com/posts" id="search" method="POST" >
-          <button class="search__btn" type="submit"></button>
-          <input class="search__input" type="search" name="search" placeholder="Поиск по сайту" >
+          <button class="search__btn" type="submit" aria-label="Кнопка найти"></button>
+          <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
         </form>
       </div>
     </div>
@@ -241,164 +241,164 @@
               <div class="gallery__pagination"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                        <ul class="list gallery__list">
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-70.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-69.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-68.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-72.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-73.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-71.png" alt="">
-                          </li>
-                        </ul>
+                  <ul class="list gallery__list">
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-70.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-69.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-68.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-72.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-73.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-71.png" alt="Картина">
+                    </li>
+                  </ul>
                 </div>
                 <div class="swiper-slide">
-                        <ul class="list gallery__list">
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-1.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-2.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-3.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-4.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-5.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-6.png" alt="">
-                          </li>
-                        </ul>
+                  <ul class="list gallery__list">
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-1.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-2.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-3.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-4.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-5.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-6.png" alt="Картина">
+                    </li>
+                  </ul>
                 </div>
                 <div class="swiper-slide">
-                        <ul class="list gallery__list">
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-77.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-74.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-79.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-78.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-75.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-76.png" alt="">
-                          </li>
-                        </ul>
+                  <ul class="list gallery__list">
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-77.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-74.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-79.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-78.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-75.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-76.png" alt="Картина">
+                    </li>
+                  </ul>
                 </div>
                 <div class="swiper-slide">
-                        <ul class="list gallery__list">
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle-87.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle 81.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle 91.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle 89.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle 83.png" alt="">
-                          </li>
-                          <li class="gallery__item">
-                            <span class="gallery__item--active">
-                              <span class="gallery__item--hover"></span>
-                            </span>
-                            <img class="gallery__image" src="img/png/Rectangle 85.png" alt="">
-                          </li>
-                        </ul>
+                  <ul class="list gallery__list">
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-87.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle 81.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle 91.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle 89.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle 83.png" alt="Картина">
+                    </li>
+                    <li class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle 85.png" alt="Картина">
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -410,21 +410,21 @@
       <div class="container">
         <div class="catalog__head">
           <h2 class="section-header catalog__header">Каталог</h2>
-            <ul class="list catalog__flags flags flags__list">
+            <ul class="list catalog__flags flags flags__list" aria-label="Выбор страны художников">
               <li class="flags__item">
-                <button class="flags__country" value="france"></button>
+                <button class="flags__country" aria-label="Франция" value="france"></button>
               </li>
               <li class="flags__item">
-                <button class="flags__country" value="germany"></button>
+                <button class="flags__country" aria-label="Германия" value="germany"></button>
               </li>
               <li class="flags__item">
-                <button class="flags__country" value="italy" checked></button>
+                <button class="flags__country" aria-label="Италия" value="italy" checked></button>
               </li>
               <li class="flags__item">
-                <button class="flags__country" value="russia"></button>
+                <button class="flags__country" aria-label="Россия" value="russia"></button>
               </li>
               <li class="flags__item">
-                <button class="flags__country" value="belgium"></button>
+                <button class="flags__country" aria-label="Бельгия" value="belgium"></button>
               </li>
             </ul>
         </div>
@@ -447,7 +447,7 @@
           <div class="catalog__accordion accordion" id="accordion">
             <h3>C 1400 по 1499 гг.</h3>
             <div class="accordion__content">
-              <ul class="list accordion__list" data-century="XV">
+              <ul class="list accordion__list" aria-label="Список художников" data-century="XV">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -466,7 +466,7 @@
             </div>
             <h3>C 1500 по 1599 гг.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XVI">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XVI">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -485,7 +485,7 @@
             </div>
             <h3>C 1600 по 1699 гг.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XVII">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XVII">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -504,7 +504,7 @@
             </div>
             <h3>C 1700 по 1799 гг.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XVIII">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XVIII">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -523,7 +523,7 @@
             </div>
             <h3>C 1800 по 1899 гг.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XVIV">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XVIV">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -542,7 +542,7 @@
             </div>
             <h3>C 1900 по 1999 гг.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XX">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XX">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -561,7 +561,7 @@
             </div>
             <h3>C 2000 г.</h3>
             <div class="accordion__content">
-               <ul class="list accordion__list" data-century="XXI">
+               <ul class="list accordion__list" aria-label="Список художников" data-century="XXI">
               </ul>
               <div class="accordion__none-box">
                 <div class="accordion__none-block">
@@ -676,7 +676,7 @@
             Категории
           </h3>
           <form class="categories__form" action="https://jsonplaceholder.typicode.com/todos/1">
-            <ul class="list categories__list">
+            <ul class="list categories__list" aria-label="Список категорий">
               <li class="categories__item">
                 <input id="bestsellers" class="check__input visually-hidden" type="checkbox" name="category">
                 <span class="check__box"></span>
@@ -768,11 +768,11 @@
           <h3 class="prise__header">
             Цена
           </h3>
-          <form class="prise__form prise-form" action="https://jsonplaceholder.typicode.com/todos/1">
+          <form class="prise__form prise-form" aria-label="Форма цены" action="https://jsonplaceholder.typicode.com/todos/1">
             <span class="prise-form__span" >От</span>
-            <input class="prise-form__text" type="text" name="min-prise" value="50">
+            <input aria-label="Цена от" class="prise-form__text" type="text" name="min-prise" value="50">
             <span class="prise-form__span" >до</span>
-            <input class="prise-form__text" type="text" name="max-prise" value="25000">
+            <input aria-label="Цена до" class="prise-form__text" type="text" name="max-prise" value="25000">
             <span class="prise-form__span" >руб.</span>
           </form>
         </div>
@@ -977,68 +977,59 @@
           Партнёры проектов:
         </h3>
         <div class="partners__swiper-container">
-          <div class="partners__button-prev"></div>
+          <div class="partners__button-next"></div>
           <div class="swiper-container partners__swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--1" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-1.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-1-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--2" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-2.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-2-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--3" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-3.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-3-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--4" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-4.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-4-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--5" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-5.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-5-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--6" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-6.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-6-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--7" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-7.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-7-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--8" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-8.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-8-hover.png" alt="">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="partners__link partners__link--9" href="#">
+                  <a class="partners__link" aria-label="Партнер" href="#">
                     <img class="partners__img" src="img/png/partner-9.png" alt="">
-                    <img class="partners__img partners__img--hover" src="img/png/partner-9-hover.png" alt="">
                   </a>
                 </div>
             </div>
         
             <!-- If we need navigation buttons -->
           </div>
-          <div class="partners__button-next"></div>
+          <div class="partners__button-prev"></div>
         </div>
       </div>
     </section>
@@ -1054,23 +1045,23 @@
               <p class="text contacts__address">
                 Леонтьевский переулок, дом 5/1
               </p>
-              <div class="contacts__order-a-call order-a-call">
-                <h3 class="order-a-call__header">Заказать обратный звонок</h3>
-                <form class="order-a-call__form" action="https://jsonplaceholder.typicode.com/posts" id="call" method="POST" >
-                  <label class="order-a-call__label">
-                    <input class="order-a-call__input" type="text" data-validate-field="name" name="name" placeholder="Имя*">
+              <div class="contacts__order-call order-call">
+                <h3 class="order-call__header">Заказать обратный звонок</h3>
+                <form class="order-call__form" action="https://jsonplaceholder.typicode.com/posts" id="call" method="POST" >
+                  <label class="order-call__label">
+                    <input class="order-call__input" aria-label="Введите имя" type="text" data-validate-field="name" name="name" placeholder="Имя*">
                   </label>
-                  <label class="order-a-call__label">
-                    <input class="order-a-call__input" type="tel" data-validate-field="tel" name="tel" placeholder="Телефон*">
+                  <label class="order-call__label">
+                    <input class="order-call__input" aria-label="Введите телефон" type="tel" data-validate-field="tel" name="tel" placeholder="Телефон*">
                   </label>
-                  <button class="order-a-call__btn" type="submit">Заказать</button>
+                  <button class="order-call__btn" type="submit">Заказать</button>
                 </form>
               </div>
               <h3 class="contacts__one-click">Связаться в один клик</h3>
               <div class="contacts__social">
-                  <a class="contacts__whatsapp" href="#">
+                  <a class="contacts__whatsapp" aria-label="whatsapp" href="#">
                   </a>
-                  <a class="contacts__tellegram" href="#">
+                  <a class="contacts__tellegram" aria-label="телеграмм" href="#">
                   </a>
               </div>
             </div>
@@ -1084,18 +1075,18 @@
   </main>
   <footer class="footer">
       <div class="container footer__content">
-        <a href="#" class="logo footer__logo">
+        <a href="#" aria-label="Логотип сайта: Blanchard" class="logo footer__logo">
           <img src="img/svg/logo.svg" alt="логотип сайта">
         </a>
         <ul class="list footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__link footer__link--vk"></a>
+            <a href="#" aria-label="вконтакте" class="footer__link footer__link--vk"></a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link footer__link--inst"></a>
+            <a href="#" aria-label="инстаграмм" class="footer__link footer__link--inst"></a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link footer__link--fb"></a>
+            <a href="#" aria-label="фейсбук" class="footer__link footer__link--fb"></a>
           </li>
         </ul>
       </div>
