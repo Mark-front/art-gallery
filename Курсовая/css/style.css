@@ -710,6 +710,7 @@ body {
   height: 350px;
   margin-right: 50px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .gallery__item:nth-child(4n) {
@@ -797,8 +798,8 @@ body {
   margin: 0;
   background-color: #666;
   border-radius: 35px;
-  transition-property: background-color, box-shadow;
-  transition: .3s ease;
+  cursor: pointer;
+  transition: background-color .3s ease, box-shadow .3s ease;
 }
 
 .publication__swiper-button-prev,
@@ -1104,8 +1105,7 @@ html .ui-button.ui-state-disabled:active {
   color: #333;
   font-size: 16px;
   line-height: 32px;
-  transition-property: box-shadow, color;
-  transition: .3s ease;
+  transition: box-shadow .3s ease, color .3s ease;
 }
 
 
@@ -1164,8 +1164,7 @@ html .ui-button.ui-state-disabled:active {
   line-height: 22px;
   margin: 0;
   color: var(--btn-color);
-  transition-property: color, box-shadow;
-  transition: .3s ease;
+  transition: color .3s ease, box-shadow .3s ease;
 } 
 
 .to-gallary-link:hover {
@@ -1296,8 +1295,7 @@ html .ui-button.ui-state-disabled:active {
   box-shadow: 0 0 0 2px var(--btn-color);
   border-radius: 30px;
   color: var(--btn-color);
-  transition-property: color, background-color, box-shadow;
-  transition: .3s ease;
+  transition: color .3s ease, background-color .3s ease, box-shadow .3s ease;
 }
 
 .events__btn:hover {
@@ -1408,8 +1406,7 @@ html .ui-button.ui-state-disabled:active {
   font-size: 16px;
   line-height: 22px;
   color: var(--text-not-on-white-background);
-  transition-property: color, background-color, border;
-  transition: .3s ease;
+  transition: color .3s ease, background-color .3s ease, border .3s ease;
 }
 
 .book__order:hover {
@@ -1446,8 +1443,7 @@ html .ui-button.ui-state-disabled:active {
   width: fit-content;
   align-items: center;
   cursor: pointer;
-  transition-property: color;
-  transition: .3s ease;
+  transition: color .3s ease;
 }
 
 .check__box {
@@ -1457,8 +1453,7 @@ html .ui-button.ui-state-disabled:active {
   margin-right: 13px;
   box-shadow: 0 0 0 1px var(--text-not-on-white-background);
   background: center center;
-  transition-property: box-shadow;
-  transition: .3s ease;
+  transition: box-shadow .3s ease;
 }
 
 .check:hover {
@@ -1555,8 +1550,7 @@ html .ui-button.ui-state-disabled:active {
   background: rgba(157, 92, 208, 0.5);
   border: none;
   color: var(--text-not-on-white-background);
-  transition-property: background-color, box-shadow;
-  transition: .3s ease;
+  transition: background-color .3s ease, box-shadow .3s ease;
 }
 
 .prise-form__text:hover {
@@ -1642,8 +1636,7 @@ html .ui-button.ui-state-disabled:active {
   bottom: -16px;
   border: 8px solid transparent ;
   border-top: 8px solid var(--btn-color);
-  transition-property: opacity;
-  transition: .3s ease;
+  transition: opacity .3s ease;
 }
 
 .tooltip__btn:hover + .tooltip__txt {
@@ -1662,8 +1655,7 @@ html .ui-button.ui-state-disabled:active {
   font-weight: 600;
   font-size: 16px;
   color: var(--btn-color);
-  transition-property: color, box-shadow;
-  transition: .3s ease;
+  transition:  color .3s ease, box-shadow .3s ease;
 }
 
 .projects__link:hover {
@@ -1699,8 +1691,7 @@ html .ui-button.ui-state-disabled:active {
   width: 450px;
   padding: 75px 0;
   border: 1px solid var(--accordion-border);
-  transition-property: background-image, border;
-  transition: .3s ease;
+  transition: background-image .3s ease, border .3s ease;
 }
 
 .partners__img {
@@ -1732,9 +1723,9 @@ html .ui-button.ui-state-disabled:active {
   height: auto;
   width: auto;
   margin: 0;
+  cursor: pointer;
   border-radius: 35px;
-  transition-property: background-color, box-shadow;
-  transition: .3s ease;
+  transition:  background-color .3s ease, box-shadow .3s ease;
 }
 
 .partners__button-prev {
@@ -1770,10 +1761,13 @@ html .ui-button.ui-state-disabled:active {
   display: flex;
 }
 
-.container--full {
-  width: 100%;
-  margin: 0 auto;
-  border: 1px solid var(--accordion-border);
+.contacts__content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -122px;
+  width: 1920px;
+  border-top: 1px solid var(--accordion-border);
 }
 
 .contacts__header {
@@ -1832,8 +1826,7 @@ html .ui-button.ui-state-disabled:active {
   padding: 11px 0 9px 24px;
   border: 1px solid #333333;
   border-radius: 100px;
-  transition-property: background-color;
-  transition: .3s ease;
+  transition: background-color .3s ease;
 }
 
 .order-call__input:hover, .order-call__input:focus {
@@ -1858,8 +1851,7 @@ html .ui-button.ui-state-disabled:active {
   font-size: 18px;
   line-height: 25px;
   color: #9D5CD0;
-  transition-property: color, background-color, border;
-  transition: .3s ease;
+  transition: color .3s ease, background-color .3s ease, border .3s ease;
 }
 
 .order-call__btn:hover {
@@ -1892,8 +1884,7 @@ html .ui-button.ui-state-disabled:active {
   padding: 20px;
   margin-right: 20px;
   border-radius: 35px;
-  transition-property: background-color, box-shadow;
-  transition: .3s ease;
+  transition: background-color .3s ease, box-shadow .3s ease;
 }
 
 .contacts__whatsapp {
@@ -1963,8 +1954,7 @@ html .ui-button.ui-state-disabled:active {
 .footer__link--vk,
 .footer__link--inst,
 .footer__link--fb {
-  transition-property: background-image;
-  transition: .3s ease;
+  transition: background-image .3s ease;
 }
 
 .footer__link--vk {
