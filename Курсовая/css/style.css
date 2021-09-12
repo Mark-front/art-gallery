@@ -256,7 +256,7 @@ body {
   font-size: 18px;
   line-height: 25px;
   background: url(../img/svg/log-in-icon.svg) no-repeat left center;
-  transition: color, background-image .3s ease;
+  transition: color .3s ease, background-image .3s ease;
 }
 
 .top-header__log-in:hover {
@@ -307,7 +307,7 @@ body {
   padding-right: 16px;
   background: url(../img/svg/SelectIcon.svg) no-repeat right 63%;
   color: var(--text-not-on-white-background);
-  transition: color, background-image .3s ease;
+  transition: color .3s ease, background-image .3s ease;
 }
 
 .bottom-header__btn:hover {
@@ -371,7 +371,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  transition: color, box-shadow .3s ease;
+  transition: color .3s ease, box-shadow .3s ease;
 }
 
 .select-list__link:hover {
@@ -428,7 +428,7 @@ body {
   background: none;
   border: none;
   border-bottom: 1px solid var(--border-search);
-  transition: color, border .3s ease;
+  transition: color .3s ease, border .3s ease;
 }
 
 .search__input:hover {
@@ -495,7 +495,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  transition: color, background-color, box-shadow .3s ease;
+  transition: color .3s ease, background-color .3s ease, box-shadow .3s ease;
 }
 
 .hero-block__btn:hover {
@@ -602,7 +602,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
-  transition: color, box-shadow .3s ease;
+  transition: color .3s ease, box-shadow .3s ease;
 }
 
 .gallery__down-text-link:hover {
@@ -1012,7 +1012,7 @@ body {
   border-top: 1px solid var(--btn-active);
   border-bottom: 1px solid var(--btn-active);
   color: var(--btn-active);
-  transition: border, color .3s ease;
+  transition: border .3s ease, color .3s ease;
 }
 
 .ui-accordion-header-active .ui-icon {
@@ -1755,18 +1755,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /* section-contacts */
-
 .contacts__content {
-  position: relative;
+  width: 1899px;
+  margin: 0 auto;
   display: flex;
-}
-
-.contacts__content::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -122px;
-  width: 1920px;
   border-top: 1px solid var(--accordion-border);
 }
 
@@ -1775,8 +1767,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .contacts__address-and-form {
-  width: 522px;
-  padding: 125px 125px 0 0;
+  padding: 125px 125px 0 125px;
   margin: 0;
   border-right: 1px solid var(--accordion-border);
 }
@@ -1868,7 +1859,6 @@ html .ui-button.ui-state-disabled:active {
 .contacts__social {
   display: flex;
   flex-wrap: nowrap;
-  padding: 0 0 125px 0;
 }
 
 .contacts__one-click {
