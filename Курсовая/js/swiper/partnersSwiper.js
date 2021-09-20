@@ -1,8 +1,17 @@
 var mySwiper = new Swiper('.partners__swiper', {
   // Optional parameters
-  slidesPerView: 3,
   direction: 'horizontal',
   loop: true,
+
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+    },
+    1025: {
+      slidesPerView: 3,
+    },
+  },
+
   
   // Navigation arrows
   navigation: {

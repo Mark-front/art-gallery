@@ -30,4 +30,5 @@
     // Размещение геообъекта на карте.
     myMap.geoObjects.add(myGeoObject);
     myMap.geoObjects.add(myPlacemark);
-    }
+
+  }

@@ -2,6 +2,15 @@ var publicationSwiper = new Swiper('.publications__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+    },
+    1025: {
+      slidesPerView: 3,
+    },
+  },
 
   // If we need pagination
   pagination: {

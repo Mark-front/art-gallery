@@ -63,13 +63,11 @@ const arrAllArtist = {
 function changingHeightActiveAccordion() {
   let accordionContent;
   const activeAccordion = document.querySelector('.ui-accordion-content-active');
-  console.log(activeAccordion.querySelector('.accordion__list').querySelector('.accordion__item'))
   if(activeAccordion.querySelector('.accordion__list').querySelector('.accordion__item') !== null) {
     accordionContent = activeAccordion.querySelector('.accordion__list');
   } else {
     accordionContent = activeAccordion.querySelector('.accordion__none-box');
   }
-  console.log(accordionContent.clientHeight+50, accordionContent)
   activeAccordion.style.height = (accordionContent.clientHeight+50) + 'px';
 }
 
@@ -156,7 +154,6 @@ function accordionBtnWork() {
 function accordionHeadClik() {
   document.querySelectorAll('.ui-accordion-header').forEach(header => {
     header.addEventListener("click", () => {
-      console.log(1)
       changingHeightActiveAccordion();
     });
   });
