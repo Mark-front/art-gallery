@@ -117,17 +117,37 @@ function completionAccordion(country, arrAllArtist) {
 function artistShow(artistActive) {
   arrShowArtists.forEach((artist, index) => {
     if(artist.artistName === artistActive) {
-      document.querySelector('.about-the-artist__img').src = artist.artistImg;
-      document.querySelector('.about-the-artist__name').innerText = artist.artistName;
-      document.querySelector('.about-the-artist__life-year').innerText = artist.yearsOfLife;
-      document.querySelector('.about-the-artist__text').innerText = artist.biography;
-      document.querySelector('.to-gallary-link').innerText = "";
+      document.querySelectorAll('.about-the-artist__img').forEach(item => {
+        item.src = artist.artistImg;
+      });
+      document.querySelectorAll('.about-the-artist__name').forEach(item => {
+        item.innerText = artist.artistName;
+      });
+      document.querySelectorAll('.about-the-artist__life-year').forEach(item => {
+        item.innerText = artist.yearsOfLife;
+      });
+      document.querySelectorAll('.about-the-artist__text').forEach(item => {
+        item.innerText = artist.biography;
+      });
+      document.querySelectorAll('.to-gallary-link').forEach(item => {
+        item.innerText = "В галерею";
+      });
     } else {
-      document.querySelector('.about-the-artist__img').src = "img/png/unknown-artist-img.png";
-      document.querySelector('.about-the-artist__name').innerText = "Что мы о нём знаем?";
-      document.querySelector('.about-the-artist__text').innerText = "Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!";
-      document.querySelector('.about-the-artist__life-year').innerText = "";
-      document.querySelector('.to-gallary-link').innerText = "В галерею";
+      document.querySelectorAll('.about-the-artist__img').forEach(item => {
+        item.src = "img/png/unknown-artist-img.png";
+      });
+      document.querySelectorAll('.about-the-artist__name').forEach(item => {
+        item.innerText = "Что мы о нём знаем?";
+      });
+      document.querySelectorAll('.about-the-artist__text').forEach(item => {
+        item.innerText = "Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!";
+      });
+      document.querySelectorAll('.about-the-artist__life-year').forEach(item => {
+        item.innerText = "";
+      });
+      document.querySelectorAll('.to-gallary-link').forEach(item => {
+        item.innerText = "В галерею";
+      });
     }
   });
 }

@@ -30,5 +30,7 @@ function selectOpen() {
   });
 }
 
-
-selectOpen();
+document.addEventListener("DOMContentLoaded", function(event)
+{
+  selectOpen();
+});

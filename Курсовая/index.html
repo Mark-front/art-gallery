@@ -23,7 +23,7 @@
           <span class="burger__span"></span>
         </button>
         <a href="#" class="logo top-header__logo" aria-label="Логотип сайта: Blanchard">
-          <img src="img/svg/logo.svg" aria-label="Логотип сайта: Blanchard" alt="логотип сайта">
+          <img class="logo__img" src="img/svg/logo.svg" aria-label="Логотип сайта: Blanchard" alt="логотип сайта">
         </a>
         <nav class="nav">
           <ul class="list nav__list">
@@ -226,9 +226,24 @@
     <section class="gallery">
       <div class="container">
         <div class="gallery__content">
-          <div class="gallery__filter-and-text-bottom">
+          <div class="gallery__filter-and-text-bottom--768">
             <h2 class="gallery__header section-header">
               <a id="gallery"></a>
+              Галерея
+            </h2>
+            <div class="gallery__filter filter">
+              <h3 class="filter__header">
+                Фильтр:
+              </h3>
+              <select name="select" class="filter__select">
+                <option value="Живопись" selected></option>
+                <option value="Рисунок"></option>
+                <option value="Скульптура"></option>
+              </select>
+            </div>
+          </div>
+          <div class="gallery__filter-and-text-bottom">
+            <h2 class="gallery__header section-header">
               Галерея
             </h2>
             <div class="gallery__filter filter">
@@ -251,7 +266,7 @@
               , либо воспользуйтесь лицензией.
             </p>
           </div>
-          <div class="gallery__swiper-container">
+          <div class="gallery__swiper-container swiper-1920">
             <div class="gallery__swiper-pagination nav-and-pagination">
               <div class="swiper-button-prev"></div>
               <div class="nav-and-pagination__pagination">
@@ -261,9 +276,9 @@
               </div>
               <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-container gallery__swiper">
+            <div class="gallery__swiper">
               <div class="gallery__pagination"></div>
-              <div class="swiper-wrapper swiper-1920">
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <ul class="list gallery__list">
                     <li class="gallery__item">
@@ -425,7 +440,21 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-wrapper swiper-1024">
+            </div>
+          </div>
+          <div class="gallery__swiper-container swiper-1024">
+            <div class="gallery__swiper-pagination nav-and-pagination">
+              <div class="swiper-button-prev"></div>
+              <div class="nav-and-pagination__pagination">
+                <span class="nav-and-pagination__pagination-current"></span>
+                <span>/</span>
+                <span class="nav-and-pagination__pagination-total"></span>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-container gallery__swiper">
+              <div class="gallery__pagination"></div>
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <ul class="list gallery__list">
                     <li class="gallery__item">
@@ -597,6 +626,407 @@
               </div>
             </div>
           </div>
+          <div class="gallery__swiper-container swiper-740">
+            <div class="swiper-container gallery__swiper">
+              <div class="gallery__pagination"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-70.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-69.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-68.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-72.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-73.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-71.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-1.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-2.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-3.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-4.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-5.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-6.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-77.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-74.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-79.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-78.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-75.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-76.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-87.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 81.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 91.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 89.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 83.png" alt="Картина">
+                  </div>
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 85.png" alt="Картина">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__swiper-pagination nav-and-pagination">
+              <div class="swiper-button-prev"></div>
+              <div class="nav-and-pagination__pagination">
+                <span class="nav-and-pagination__pagination-current"></span>
+                <span>/</span>
+                <span class="nav-and-pagination__pagination-total"></span>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="gallery__swiper-container swiper-320">
+            <div class="swiper-container gallery__swiper">
+              <div class="gallery__pagination"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-70.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-69.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-68.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-72.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery__item">
+                      <span class="gallery__item--active">
+                        <span class="gallery__item--hover"></span>
+                      </span>
+                      <img class="gallery__image" tabindex="0" src="img/png/Rectangle-73.png" alt="Картина">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-71.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-1.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-2.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-3.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-4.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-5.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-6.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-77.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-74.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-79.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-78.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-75.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-76.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle-87.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 81.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 91.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 89.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 83.png" alt="Картина">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery__item">
+                    <span class="gallery__item--active">
+                      <span class="gallery__item--hover"></span>
+                    </span>
+                    <img class="gallery__image" tabindex="0" src="img/png/Rectangle 85.png" alt="Картина">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__swiper-pagination nav-and-pagination">
+              <div class="swiper-button-prev"></div>
+              <div class="nav-and-pagination__pagination">
+                <span class="nav-and-pagination__pagination-current"></span>
+                <span>/</span>
+                <span class="nav-and-pagination__pagination-total"></span>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <p class="text gallery__down-text gallery__down-text--768">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+            <span>
+              <a class="gallery__down-text-link" href="#">
+                авторизуйтесь
+              </a>
+            </span>
+            , либо воспользуйтесь лицензией.
+          </p>
         </div>
       </div>
     </section>
@@ -777,6 +1207,18 @@
             </div>
           </div>
         </div>
+        <div class="catalog__about-the-artist--768 about-the-artist">
+          <img class="about-the-artist__img" src="#" alt="">
+          <div class="about-the-artist__inform">
+            <h3 class="about-the-artist__name">
+            </h3>
+            <p class="text about-the-artist__life-year">
+            </p>
+            <p class="text about-the-artist__text">
+            </p>
+            <a href="#gallery" class="to-gallary-link"></a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="events">
@@ -866,6 +1308,100 @@
         <button class="events__btn">
           Все события
         </button>
+        <div class="swiper-container events__swiper">
+            <div class="swiper-wrapper events__swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="event-card">
+                  <img class="event-card__img" src="img/png/Rectangle 101.png" alt="">
+                  <p class="text event-card__mini-text">
+                    Музей им. Щусева <br> с 20 марта по 30 апреля
+                  </p>
+                  <h3 class="event-card__header">
+                    Книжная гравюра в живом восприятии
+                  </h3>
+                  <p class="text event-card__text">
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                    продолжили его брат Давид и сын Ридольфо.
+                  </p>
+                  <a href="#" class="event-card__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="event-card">
+                  <img class="event-card__img" src="img/png/Rectangle 102.png" alt="">
+                  <p class="text event-card__mini-text">
+                    ММОМА <br> 24 марта 19:00
+                  </p>
+                  <h3 class="event-card__header">
+                    «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                  </h3>
+                  <p class="text event-card__text">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                    факта.
+                  </p>
+                  <a href="#" class="event-card__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="event-card">
+                  <img class="event-card__img" src="img/png/Rectangle 103.png" alt="">
+                  <p class="text event-card__mini-text">
+                    Еврейский музей <br> с 31 марта по 21 апреля
+                  </p>
+                  <h3 class="event-card__header">
+                    Выставка «Формация 2020»
+                  </h3>
+                  <p class="text event-card__text">
+                    Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                    формировании глубокомысленных рассуждений.
+                  </p>
+                  <a href="#" class="event-card__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="event-card">
+                  <img class="event-card__img" src="img/png/Rectangle 104.png" alt="">
+                  <p class="text event-card__mini-text">
+                    Третьяковка на Крымском валу <br> с 30 марта по 30 апреля
+                  </p>
+                  <h3 class="event-card__header">
+                    XXIV Международная биеннале молодого искусства
+                  </h3>
+                  <p class="text event-card__text">
+                    Внезапно, реплицированные с зарубежных источников, современные исследования.
+                  </p>
+                  <a href="#" class="event-card__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <li class="event-card">
+                  <img class="event-card__img" src="img/png/Rectangle 105.png" alt="">
+                  <p class="text event-card__mini-text">
+                    ММАМ <br> с 8 апреля по 20 мая
+                  </p>
+                  <h3 class="event-card__header">
+                    Джон Винзор. Фотографии из серии «Метафора серебра»
+                  </h3>
+                  <p class="text event-card__text">
+                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                    продолжили его брат Давид и сын Ридольфо.
+                  </p>
+                  <a href="#" class="event-card__link">
+                    Подробнее
+                  </a>
+                </li>
+              </div>
+            </div>
+            <div class="events-swiper__pagination"></div>
+        </div>
       </div>
     </section>
     <section class="publications">
@@ -875,6 +1411,7 @@
           <div class="publications__categories categories">
             <h3 class="categories__header">
               Категории
+              <span class="categories__header-icon"></span>
             </h3>
             <form class="categories__form" action="https://jsonplaceholder.typicode.com/todos/1">
               <ul class="list categories__list" aria-label="Список категорий">
@@ -884,6 +1421,7 @@
                   <label for="bestsellers" class="categories__label check">
                     Бестселлеры
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="art" class="check__input visually-hidden" type="checkbox" name="category">
@@ -891,6 +1429,7 @@
                   <label for="art" class="categories__label check">
                     Искусство
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="architecture" class="check__input visually-hidden" type="checkbox" name="category">
@@ -898,6 +1437,7 @@
                   <label for="architecture" class="categories__label check">
                     Архитектура
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="design" class="check__input visually-hidden" type="checkbox" name="category" checked>
@@ -905,6 +1445,7 @@
                   <label for="design" class="categories__label categories__label--active check">
                     Дизайн
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="fashion" class="check__input visually-hidden" type="checkbox" name="category">
@@ -912,6 +1453,7 @@
                   <label for="fashion" class="categories__label check">
                     Мода
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="children" class="check__input visually-hidden" type="checkbox" name="category">
@@ -919,6 +1461,7 @@
                   <label for="children" class="categories__label check">
                     Детям
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="fiction" class="check__input visually-hidden" type="checkbox" name="category">
@@ -926,6 +1469,7 @@
                   <label for="fiction" class="categories__label check">
                     Художественная литература
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="journalism" class="check__input visually-hidden" type="checkbox" name="category">
@@ -933,6 +1477,7 @@
                   <label for="journalism" class="categories__label check">
                     Публицистика
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="guidebook" class="check__input visually-hidden" type="checkbox" name="category">
@@ -940,6 +1485,7 @@
                   <label for="guidebook" class="categories__label check">
                     Путеводители
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="philosophy" class="check__input visually-hidden" type="checkbox" name="category">
@@ -947,6 +1493,7 @@
                   <label for="philosophy" class="categories__label check">
                     Философия
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="educational-literature" class="check__input visually-hidden" type="checkbox"
@@ -955,6 +1502,7 @@
                   <label for="educational-literature" class="categories__label check">
                     Учебная литература
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
                 <li class="categories__item">
                   <input id="magazines-newspapers" class="check__input visually-hidden" type="checkbox" name="category">
@@ -962,6 +1510,7 @@
                   <label for="magazines-newspapers" class="categories__label check">
                     Журналы и газеты
                   </label>
+                  <span class="categories__icon"></span>
                 </li>
               </ul>
             </form>
@@ -1115,6 +1664,113 @@
             </div>
           </div>
         </div>
+        <ul class="list publication__list-book">
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-111.png" alt="">
+            <p class="text book__name">
+              Искусство цвета
+            </p>
+            <p class="text book__author">
+              Иттен, Иоханнес
+            </p>
+            <p class="text book__prise">
+              620 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-112.png" alt="">
+            <p class="text book__name">
+              Типографика
+            </p>
+            <p class="text book__author">
+              Рудер, Эмиль
+            </p>
+            <p class="text book__prise">
+              2450 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-113.png" alt="">
+            <p class="text book__name">
+              Книга про буквы
+            </p>
+            <p class="text book__author">
+              Гордон, Юрий
+            </p>
+            <p class="text book__prise">
+              2200 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-114.png" alt="">
+            <p class="text book__name">
+              Николай Ильин
+            </p>
+            <p class="text book__author">
+              Кричевский, Владимир
+            </p>
+            <p class="text book__prise">
+              1100 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-115.png" alt="">
+            <p class="text book__name">
+              Модульные сетки в граф...
+            </p>
+            <p class="text book__author">
+              Мюллер-Брокманн, Йозеф
+            </p>
+            <p class="text book__prise">
+              1450 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-116.png" alt="">
+            <p class="text book__name">
+              Эволюция графических ст...
+            </p>
+            <p class="text book__author">
+              Хеллер, Чваст
+            </p>
+            <p class="text book__prise">
+              3200 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+          <li class="publications__book book">
+            <img class="book__image" src="img/png/Rectangle-117.png" alt="">
+            <p class="text book__name">
+              Искусство и визуальное в...
+            </p>
+            <p class="text book__author">
+              Арнхейм, Рудольф
+            </p>
+            <p class="text book__prise">
+              2200 руб
+            </p>
+            <a href="#" class="book__order">
+              Заказать
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="projects">
@@ -1163,52 +1819,50 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-1.png" alt="Партнер">
+                  <img id="partner-img-1" class="partners__img" src="img/png/partner-1.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-2.png" alt="Партнер">
+                  <img id="partner-img-2" class="partners__img" src="img/png/partner-2.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-3.png" alt="Партнер">
+                  <img id="partner-img-3" class="partners__img" src="img/png/partner-3.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-4.png" alt="Партнер">
+                  <img id="partner-img-4" class="partners__img" src="img/png/partner-4.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-5.png" alt="Партнер">
+                  <img id="partner-img-5" class="partners__img" src="img/png/partner-5.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-6.png" alt="Партнер">
+                  <img id="partner-img-6" class="partners__img" src="img/png/partner-6.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-7.png" alt="Партнер">
+                  <img id="partner-img-7" class="partners__img" src="img/png/partner-7.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-8.png" alt="Партнер">
+                  <img id="partner-img-8" class="partners__img" src="img/png/partner-8.png" alt="Партнер">
                 </a>
               </div>
               <div class="swiper-slide">
                 <a class="partners__link" href="#">
-                  <img class="partners__img" src="img/png/partner-9.png" alt="Партнер">
+                  <img id="partner-img-9" class="partners__img" src="img/png/partner-9.png" alt="Партнер">
                 </a>
               </div>
             </div>
-
-            <!-- If we need navigation buttons -->
           </div>
           <div class="partners__button-prev"></div>
         </div>
@@ -1224,6 +1878,9 @@
           <p class="text contacts__address">
             Леонтьевский переулок, дом 5/1
           </p>
+          <div class="contacts__map--mini">
+            <div id="contact__map1"></div>
+          </div>
           <div class="contacts__order-call order-call">
             <h3 class="order-call__header">Заказать обратный звонок</h3>
             <form class="order-call__form" action="https://jsonplaceholder.typicode.com/posts" id="call" method="POST">
@@ -1247,7 +1904,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <div id="map"></div>
+          <div id="contact__map2"></div>
         </div>
       </div>
     </section>
@@ -1268,11 +1925,15 @@
           <a href="#" aria-label="фейсбук" class="footer__link footer__link--fb"></a>
         </li>
       </ul>
+      <a href="#" aria-label="Логотип сайта: Blanchard" class="logo footer__logo footer__logo--mini">
+        <img class="logo__img" src="img/svg/logo.svg" alt="логотип сайта">
+      </a>
     </div>
   </footer>
   <script src="js/swiper/swiper-bundle.js"></script>
   <script src="js/swiper/swiper-bundle.min.js"></script>
   <script src="js/simplebar/simplebar.min.js"></script>
+  <script src="js/burger.js"></script>
   <script src="js/jquery/jquery.js"></script>
   <script src="js/jquery/jquery-ui.js"></script>
   <script src="js/select/choices.min.js"></script>
@@ -1294,7 +1955,7 @@
   <script src="js/jquery/just-validate.min.js"></script>
   <script src="js/mask-and-valid.js"></script>
   <script src="js/prise-form.js"></script>
-  <script src="js/burger.js"></script>
-</body>
-
+  <script src="js/swiper/eventsSwiper.js"></script>
+  <script src="js/publicationFilter.js"></script>
+  </body>
 </html>

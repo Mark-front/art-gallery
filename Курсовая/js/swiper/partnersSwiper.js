@@ -3,11 +3,20 @@ var mySwiper = new Swiper('.partners__swiper', {
   direction: 'horizontal',
   loop: true,
 
+  
   breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    561: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
     769: {
       slidesPerView: 2,
     },
     1025: {
+      spaceBetween: 50,
       slidesPerView: 3,
     },
   },

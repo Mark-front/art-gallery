@@ -4,10 +4,20 @@ var publicationSwiper = new Swiper('.publications__swiper', {
   loop: true,
   
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    741: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
     769: {
+      slidesPerView: 1,
+    },
+    992: {
       slidesPerView: 2,
     },
-    1025: {
+    1701: {
       slidesPerView: 3,
     },
   },
