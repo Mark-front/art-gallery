@@ -702,7 +702,8 @@ body {
 }
 
 .swiper-1024,
-.swiper-320 {
+.swiper-320,
+.swiper-740 {
   display: none;
 }
 
