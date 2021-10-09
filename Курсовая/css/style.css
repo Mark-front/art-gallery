@@ -2049,7 +2049,8 @@ html .ui-button.ui-state-disabled:active {
 
 .burger, 
 .burger-menu,
-.search__btn--fake {
+.search__btn--fake,
+.top-header__search {
   display: none;
 }
 
