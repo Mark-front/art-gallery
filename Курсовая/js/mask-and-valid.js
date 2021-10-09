@@ -40,3 +40,4 @@ function validateForms(selector) {
   });
 }
 validateForms('.order-a-call__form');
+validateForms('.search');

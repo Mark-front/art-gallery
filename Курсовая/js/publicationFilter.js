@@ -21,7 +21,6 @@ function createListCheckedElements(arrElem) {
 
 //Изменение и скрытие листа 
 function changeCategoriesList(inputArr, iconHeader, list, btn) {
-  document.querySelector
   let listChecked = createListCheckedElements(Array.from(inputArr));
   document.querySelector('.categories__form').appendChild(listChecked);
   btn.addEventListener("click", () => {
@@ -40,11 +39,14 @@ function changeCategoriesList(inputArr, iconHeader, list, btn) {
 
 document.addEventListener("DOMContentLoaded", () => {
   if ((window.matchMedia("(max-width: 600px)").matches)) {
+    listCategories.classList.add("visually-hidden");
     changeCategoriesList(inpuntCheckArr, categoriesHeaderIcon, listCategories, categoriesHeader);
   }
-  // window.addEventListener(`resize`, event => {
-  //   if ((window.matchMedia("(max-width: 320px)").matches)) {
-  //     changeCategoriesList(inpuntCheckArr, categoriesHeaderIcon, listCategories, categoriesHeader);
-  //   }
-  // }, false);
+  window.addEventListener(`resize`, event => {
+    if ((window.matchMedia("(max-width: 600px)").matches)) {
+      listCategories.classList.add("visually-hidden");
+    } else {
+      listCategories.classList.remove("visually-hidden");
+    }
+  }, false);
 });

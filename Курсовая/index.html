@@ -67,12 +67,12 @@
         <a href="#" class="top-header__log-in">
           Войти
         </a>
-        <form class="top-header__search search" action="https://jsonplaceholder.typicode.com/posts" id="search"
-          method="POST">
-          <button class="search__btn" type="submit" aria-label="Кнопка найти"></button>
-          <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
-        </form>
+        <button class="search__btn search__btn--fake" type="submit" aria-label="Открыть форму поиска по сайту"></button>
       </div>
+      <form class="search top-header__search" action="https://jsonplaceholder.typicode.com/posts" id="search" method="POST">
+        <button class="search__btn" type="submit" aria-label="Кнопка найти"></button>
+        <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
+      </form>
     </div>
     <div class="header__burger-menu burger-menu">
       <div class="burger-menu__left">
@@ -1957,5 +1957,6 @@
   <script src="js/prise-form.js"></script>
   <script src="js/swiper/eventsSwiper.js"></script>
   <script src="js/publicationFilter.js"></script>
+  <script src="js/search-form.js"></script>
   </body>
 </html>

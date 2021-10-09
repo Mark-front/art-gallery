@@ -1707,6 +1707,9 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /* partners-slider */
+.partners__swiper {
+  width: 100%;
+}
 
 .partners__swiper-container {
   display: flex;
@@ -2046,7 +2049,7 @@ html .ui-button.ui-state-disabled:active {
 
 .burger, 
 .burger-menu,
-.top-header__search {
+.search__btn--fake {
   display: none;
 }
 
@@ -2347,7 +2350,20 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .top-header__search {
-    display: block;
+    position: absolute;
+    display: none;
+    background-color: #000;
+    padding: 10px;
+    top: 99px;
+    right: 0;
+  }
+  
+  .top-header__search--active {
+    display: flex;
+  }
+
+  .search__btn--fake {
+    display: flex;
   }
 
   .search__btn {
@@ -2357,9 +2373,9 @@ html .ui-button.ui-state-disabled:active {
     background: url(../img/svg/Search.svg);
     border: none;
   }
-
-  .search__input {
-    display: none;
+  
+  .search .search__btn {
+    margin-right: 9px;
   }
   /* burger */
   
@@ -2697,9 +2713,6 @@ html .ui-button.ui-state-disabled:active {
     width: 290px;
   }
 
-  .partners__swiper {
-    width: 562px;
-  }
 
   .partners__link {
     width: 264px;
@@ -2743,7 +2756,7 @@ html .ui-button.ui-state-disabled:active {
     margin: 0 auto;
   }
 
-  .top-header__search {
+  .search__btn--fake {
     display: block;
   }
 
@@ -2753,10 +2766,6 @@ html .ui-button.ui-state-disabled:active {
     margin-right: 0px;
     background: url(../img/svg/Search.svg);
     border: none;
-  }
-
-  .search__input {
-    display: none;
   }
   /* burger */
   
@@ -3077,6 +3086,9 @@ html .ui-button.ui-state-disabled:active {
 /* -------------------740px--------------------- */
 
 @media (max-width: 740px) {
+  .hero-block__header {
+    font-size: 59px;
+  }
   .swiper-container.gallery__swiper {
     width: 317px;
   }
@@ -3085,9 +3097,6 @@ html .ui-button.ui-state-disabled:active {
     width: 317px;
   }
   /* partners */
-  .partners__swiper {
-    width: 100%;
-  }
 
   .partners__link {
     width: 195px;
@@ -3195,7 +3204,21 @@ html .ui-button.ui-state-disabled:active {
     height: 22px;
     width: 97px;
   }
-  
+
+  .top-header__search {
+    width: 30%;
+    top: 49px;
+    padding: 5px;
+  }
+
+  .search__input {
+    width: 100%;
+  }
+
+  .search .search__btn {
+    margin-right: 5px;
+  }
+
   .search__btn {
     width: 18px;
     height: 18px;

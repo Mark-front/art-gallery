@@ -131,6 +131,7 @@ function artistShow(artistActive) {
       });
       document.querySelectorAll('.to-gallary-link').forEach(item => {
         item.innerText = "В галерею";
+        document.querySelector('.about-the-artist__inform .to-gallary-link').innerText = "";
       });
     } else {
       document.querySelectorAll('.about-the-artist__img').forEach(item => {
@@ -212,5 +213,8 @@ function flagsBtnWork() {
 document.addEventListener("DOMContentLoaded", () => {
   flagsBtnWork();
   changingHeightActiveAccordion();
+  window.addEventListener(`resize`, event => {
+    changingHeightActiveAccordion()
+  }, false);
   accordionHeadClik();
 });
