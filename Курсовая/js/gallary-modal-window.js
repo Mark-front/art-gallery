@@ -39,14 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".gallery__item").forEach(item => {
     item.addEventListener("click", () => {
       let modalWindow = createModalWindow(item.querySelector(".gallery__image").src, "Казимир Малевич", "“Женщина с граблями”", "1931-1932", "Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.");
-      if(!document.querySelector("modal-window")) {
-        document.querySelector("main").append(modalWindow.windowContainer);
-      } else {
-        document.querySelector(".modal-window").remove();
-        document.querySelector("main").append(modalWindow.windowContainer);
-      }
+      document.querySelector("main").append(modalWindow.windowContainer);
+      setTimeout(() => {
+        document.querySelector(".modal-window").classList.add("modal-window--visible");
+        document.querySelector("html").style.overflow = "hidden";
+      }, 1);
       modalWindow.btnCloseWindow.addEventListener("click", () => {
-        document.querySelector(".modal-window").remove();
+        document.querySelector(".modal-window").classList.remove("modal-window--visible");
+        setTimeout(() => {
+          document.querySelector(".modal-window").remove();
+          document.querySelector("html").style.overflow = "auto";
+        }, 300);
       });
     });
   });
