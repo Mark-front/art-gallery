@@ -10,6 +10,7 @@ function createModalWindow(imgSrc, authorName, imgName, authorTimeLife, imgDescr
   const btnCloseWindow = document.createElement("btn");
 
   windowContainer.classList.add("modal-window");
+  windowContainer.id = "modal-window";
   window.classList.add("modal-window__card");
   windowImg.classList.add("modal-window__img");
   windowTextBox.classList.add("modal-window__text-box");

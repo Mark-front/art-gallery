@@ -67,11 +67,12 @@
         <a href="#" class="top-header__log-in">
           Войти
         </a>
-        <button class="search__btn search__btn--fake" type="submit" aria-label="Открыть форму поиска по сайту"></button>
+        <button class="search__btn search__btn--fake" aria-label="Открыть форму поиска по сайту"></button>
       </div>
       <form class="search top-header__search" action="https://jsonplaceholder.typicode.com/posts" id="search" method="POST">
         <button class="search__btn" type="submit" aria-label="Кнопка найти"></button>
         <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
+        <button class="search__close" type="button" aria-label="Кнопка закрыть поиск"></button>
       </form>
     </div>
     <div class="header__burger-menu burger-menu">
@@ -1421,7 +1422,7 @@
                   <label for="bestsellers" class="categories__label check">
                     Бестселлеры
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="art" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1429,7 +1430,7 @@
                   <label for="art" class="categories__label check">
                     Искусство
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="architecture" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1437,7 +1438,7 @@
                   <label for="architecture" class="categories__label check">
                     Архитектура
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="design" class="check__input visually-hidden" type="checkbox" name="category" checked>
@@ -1445,7 +1446,7 @@
                   <label for="design" class="categories__label categories__label--active check">
                     Дизайн
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="fashion" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1453,7 +1454,7 @@
                   <label for="fashion" class="categories__label check">
                     Мода
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="children" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1461,7 +1462,7 @@
                   <label for="children" class="categories__label check">
                     Детям
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="fiction" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1469,7 +1470,7 @@
                   <label for="fiction" class="categories__label check">
                     Художественная литература
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="journalism" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1477,7 +1478,7 @@
                   <label for="journalism" class="categories__label check">
                     Публицистика
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="guidebook" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1485,7 +1486,7 @@
                   <label for="guidebook" class="categories__label check">
                     Путеводители
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="philosophy" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1493,7 +1494,7 @@
                   <label for="philosophy" class="categories__label check">
                     Философия
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="educational-literature" class="check__input visually-hidden" type="checkbox"
@@ -1502,7 +1503,7 @@
                   <label for="educational-literature" class="categories__label check">
                     Учебная литература
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
                 <li class="categories__item">
                   <input id="magazines-newspapers" class="check__input visually-hidden" type="checkbox" name="category">
@@ -1510,7 +1511,7 @@
                   <label for="magazines-newspapers" class="categories__label check">
                     Журналы и газеты
                   </label>
-                  <span class="categories__icon"></span>
+                  <span class="categories__close-btn"></span>
                 </li>
               </ul>
             </form>
@@ -1960,5 +1961,6 @@
   <script src="js/search-form.js"></script>
   <script src="js/gallary-modal-window.js"></script>
   <script src="js/accordion/accordion-scroll.js"></script>
+  <script src="js/tooltip.js"></script>
   </body>
 </html>

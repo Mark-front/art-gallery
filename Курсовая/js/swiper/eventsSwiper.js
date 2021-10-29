@@ -12,6 +12,7 @@ var mySwiper = new Swiper('.events__swiper', {
   pagination: {
     el: '.events-swiper__pagination',
     type: 'bullets',
+    clickable: true
   },
 
   // And if we need scrollbar
