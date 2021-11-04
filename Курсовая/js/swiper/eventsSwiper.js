@@ -5,6 +5,7 @@ var mySwiper = new Swiper('.events__swiper', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
+  spaceBetween: 34,
 
   autoHeight: true,
   slidesPerView: 1,

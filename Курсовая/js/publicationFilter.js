@@ -29,7 +29,7 @@ function changeCategoriesList(inputArr, iconHeader, list, btn) {
     });
     listChecked = createListCheckedElements(Array.from(inputArr));
     document.querySelector('.categories__form').append(listChecked);
-    document.querySelectorAll(".categories__close-btn").forEach(item => {
+    listChecked.querySelectorAll(".categories__close-btn").forEach(item => {
       item.addEventListener("click", () => {
         let idItem = item.parentElement.querySelector(".check__input").id;
         Array.from(inputArr).forEach(element => {
@@ -46,6 +46,17 @@ function changeCategoriesList(inputArr, iconHeader, list, btn) {
     if (!list.classList.contains("visually-hidden")) {
       listChecked.classList.toggle("visually-hidden");
     }
+  });
+  document.querySelectorAll(".categories__close-btn").forEach(item => {
+    item.addEventListener("click", () => {
+      let idItem = item.parentElement.querySelector(".check__input").id;
+      Array.from(inputArr).forEach(element => {
+        console.log(element.id === idItem);
+        if (element.id === idItem) {
+          element.checked = false;
+        }
+      });
+    });
   });
   window.addEventListener(`resize`, event => {
     if (!(window.matchMedia("(max-width: 600px)").matches)) {
