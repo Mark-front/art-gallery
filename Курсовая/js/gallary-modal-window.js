@@ -52,6 +52,28 @@ document.addEventListener("DOMContentLoaded", () => {
           document.querySelector("html").style.overflow = "auto";
         }, 300);
       });
+      let heightValue = 620;
+      let displayHeight = window.innerHeight;
+      if ((window.matchMedia(`(max-height: ${heightValue}px)`).matches)&&(heightValue-displayHeight>=10)) {
+        let n = (heightValue-displayHeight)/10;
+        document.querySelector('.modal-window__card').style.top = 50 + n + "%";
+      }
+      if ((window.matchMedia(`(max-height: 420px)`).matches)&&(heightValue-displayHeight>=10)) {
+        let n = (heightValue-displayHeight)/10;
+        document.querySelector('.modal-window__card').style.top = 60 + n + "%";
+      }
+      window.addEventListener(`resize`, event => {
+        let heightValue = 620;
+        let displayHeight = window.innerHeight;
+        if ((window.matchMedia(`(max-height: ${heightValue}px)`).matches)&&(heightValue-displayHeight>=10)) {
+          let n = (heightValue-displayHeight)/10;
+          document.querySelector('.modal-window__card').style.top = 50 + n + "%";
+        }
+        if ((window.matchMedia(`(max-height: 420px)`).matches)&&(heightValue-displayHeight>=10)) {
+          let n = (heightValue-displayHeight)/10;
+          document.querySelector('.modal-window__card').style.top = 60 + n + "%";
+        }
+      }, false);
     });
   });
 });

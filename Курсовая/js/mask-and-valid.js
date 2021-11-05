@@ -39,5 +39,5 @@ function validateForms(selector) {
     },
   });
 }
-validateForms('.order-a-call__form');
+validateForms('.order-call__form');
 validateForms('.search');

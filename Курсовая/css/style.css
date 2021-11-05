@@ -748,7 +748,7 @@ body {
 
 .modal-window::-webkit-scrollbar { 
   width: 0; 
-}
+  }
 
 
 .modal-window--visible {
@@ -2208,7 +2208,8 @@ html .ui-button.ui-state-disabled:active {
 .burger-menu,
 .search__btn--fake,
 .top-header__search,
-.search__close {
+.search__close,
+.categories__close-btn {
   display: none;
 }
 
@@ -2615,7 +2616,7 @@ html .ui-button.ui-state-disabled:active {
     width: 100%;
     top: 99px;
     left: -100%;
-    transition: left .3s ease;
+    transition: top .3s ease,  left .3s ease;
   }
 
   .burger-menu--active {
@@ -3705,6 +3706,10 @@ html .ui-button.ui-state-disabled:active {
     background: url(../img/svg/320/x.svg) no-repeat;
     height: 14px;
   }
+
+  .categories__close-btn {
+    display: block;
+  }
   
   .categories__icon,
   .categories__icon--active,
@@ -4056,6 +4061,10 @@ html .ui-button.ui-state-disabled:active {
     margin-right: 0px;
     background: url(../img/svg/320/search-icon-320.svg);
     border: none;
+  }
+
+  .burger-menu--search-active {
+    top: 75px;
   }
 
 
